@@ -1,0 +1,18 @@
+*
+!.gitignore
+!.circleci/
+!*/
+#!*_out.csv
+
+# FMUs
+!fmus/*/*/*/*/*/*/*/*/*.fmu
+!fmus/*/*/*/*/*/*/*/*/*_ref.csv
+!fmus/*/*/*/*/*/*/*/*/README.txt
+
+# results
+!results/*/*/*/*/*/*/*/*/*_out.csv
+!results/*/*/*/*/*/*/*/*/README.txt
+!results/*/*/*/*/*/*/*/*/README.md
+!results/*/*/*/*/*/*/*/*/passed
+!results/*/*/*/*/*/*/*/*/rejected
+!results/*/*/*/*/*/*/*/*/failed
