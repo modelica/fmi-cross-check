@@ -1,0 +1,1512 @@
+<workspace>
+  <major-version>3</major-version>
+  <minor-version>10</minor-version>
+  <modules>
+    <module>
+      <uuid>c35acf42-13db-41c2-a67f-a6c1477a3711</uuid>
+      <sil-line>csvReader egs_in.csv -t</sil-line>
+      <enabled>true</enabled>
+      <parallel>false</parallel>
+    </module>
+    <module>
+      <uuid>2337c47d-e41f-429c-ae1d-743dc37594fa</uuid>
+      <sil-line>x64/fmu20cs -m egs.fmu</sil-line>
+      <enabled>true</enabled>
+      <parallel>false</parallel>
+      <remote-module-cluster>_</remote-module-cluster>
+    </module>
+    <module>
+      <uuid>0b3657f9-ee94-4ef4-8057-5eab853245de</uuid>
+      <sil-line>csvWriter egs_ref.csv -l csv_vars.txt -m t -I 0.000000001 -w 0</sil-line>
+      <enabled>true</enabled>
+      <parallel>false</parallel>
+    </module>
+    <gui-module/>
+  </modules>
+  <parameters>
+    <param>
+      <name>CoSim</name>
+      <value></value>
+    </param>
+  </parameters>
+  <working-dir></working-dir>
+  <tabs>
+    <group id="63576edb-458a-422a-be69-9fc7d3bcac97" active-tab-id="1edac3cf-9ebc-49a7-ad14-05895ee854f3" size="458">
+      <tab id="1edac3cf-9ebc-49a7-ad14-05895ee854f3"/>
+    </group>
+    <group id="ace7832e-445f-4d73-b9c6-3b979cfd0b7e" active-tab-id="46c4c37c-54cb-4a5d-8a9a-9bf0c8e3f728" size="400">
+      <tab id="46c4c37c-54cb-4a5d-8a9a-9bf0c8e3f728"/>
+    </group>
+  </tabs>
+  <widgets>
+    <widget-storage-container>
+      <data>
+        <widget-id>2e5cccad-8e1e-4cff-a6e4-43a03b7b8d36</widget-id>
+        <internal-bounds>
+          <x>0</x>
+          <y>0</y>
+          <width>525</width>
+          <height>370</height>
+        </internal-bounds>
+        <resizable>true</resizable>
+        <minMaxInternal>1024</minMaxInternal>
+        <minMaxExternal>0</minMaxExternal>
+        <outer>false</outer>
+        <hand-sized>true</hand-sized>
+        <z-index>0</z-index>
+        <descriptor>
+          <name>Inputs</name>
+          <description>Input widget that plots variable values</description>
+        </descriptor>
+        <read-variables-list serialization="custom">
+          <unserializable-parents/>
+          <list>
+            <default>
+              <size>6</size>
+            </default>
+            <int>6</int>
+            <widget-variable>
+              <name>accelPedal</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>205</red>
+                    <green>0</green>
+                    <blue>205</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>brakePedal</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>147</red>
+                    <green>112</green>
+                    <blue>219</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>k15</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>102</red>
+                    <green>205</green>
+                    <blue>0</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>k50</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>139</red>
+                    <green>69</green>
+                    <blue>19</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>prnd</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>255</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>roadInclination</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>130</red>
+                    <green>131</green>
+                    <blue>0</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+          </list>
+        </read-variables-list>
+        <tab-id>1edac3cf-9ebc-49a7-ad14-05895ee854f3</tab-id>
+      </data>
+      <widgetClass>data-plotter-widget</widgetClass>
+      <state class="plotter-preferences">
+        <dataSettings class="preference-store-no-save">
+          <properties>
+            <property name="time.window" value="500.0"/>
+            <defaults/>
+          </properties>
+          <defaultProperties/>
+        </dataSettings>
+        <appearanceSettings class="preference-store-no-save">
+          <properties>
+            <property name="legend.size" value="147"/>
+            <property name="legend.type" value="full"/>
+            <property name="color.scheme" value="LIGHT"/>
+            <property name="crosshair" value="false"/>
+            <defaults/>
+          </properties>
+          <defaultProperties/>
+        </appearanceSettings>
+      </state>
+    </widget-storage-container>
+    <widget-storage-container>
+      <data>
+        <widget-id>b906515d-9311-4991-affa-03e31d4242d4</widget-id>
+        <internal-bounds>
+          <x>25</x>
+          <y>54</y>
+          <width>635</width>
+          <height>370</height>
+        </internal-bounds>
+        <resizable>true</resizable>
+        <minMaxInternal>1024</minMaxInternal>
+        <minMaxExternal>0</minMaxExternal>
+        <outer>false</outer>
+        <hand-sized>true</hand-sized>
+        <z-index>0</z-index>
+        <descriptor>
+          <name>Output</name>
+          <description>Input widget that plots variable values</description>
+        </descriptor>
+        <read-variables-list serialization="custom">
+          <unserializable-parents/>
+          <list>
+            <default>
+              <size>13</size>
+            </default>
+            <int>13</int>
+            <widget-variable>
+              <name>egsCarSpeed</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>34</red>
+                    <green>139</green>
+                    <blue>34</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>egsGear</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>-2.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>72</red>
+                    <green>118</green>
+                    <blue>255</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>6.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>egsState</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>205</red>
+                    <green>145</green>
+                    <blue>158</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>2.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>egsTargetGear</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>-2.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>255</red>
+                    <green>118</green>
+                    <blue>0</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>6.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>255</red>
+                    <green>118</green>
+                    <blue>0</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>false</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds1</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>255</red>
+                    <green>118</green>
+                    <blue>0</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds2</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>220</red>
+                    <green>20</green>
+                    <blue>60</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds3</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>205</red>
+                    <green>145</green>
+                    <blue>158</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds4</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>139</red>
+                    <green>69</green>
+                    <blue>19</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_eds5</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>0</red>
+                    <green>154</green>
+                    <blue>205</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_mv1</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>205</red>
+                    <green>0</green>
+                    <blue>205</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_mv2</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>110</red>
+                    <green>123</green>
+                    <blue>139</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+            <widget-variable>
+              <name>valves_mv3</name>
+              <properties>
+                <entry>
+                  <string>minValue</string>
+                  <double>0.0</double>
+                </entry>
+                <entry>
+                  <string>color</string>
+                  <RGB>
+                    <red>0</red>
+                    <green>154</green>
+                    <blue>205</blue>
+                  </RGB>
+                </entry>
+                <entry>
+                  <string>displayName</string>
+                  <null/>
+                </entry>
+                <entry>
+                  <string>maxValue</string>
+                  <double>1.0</double>
+                </entry>
+                <entry>
+                  <string>enabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </properties>
+            </widget-variable>
+          </list>
+        </read-variables-list>
+        <tab-id>46c4c37c-54cb-4a5d-8a9a-9bf0c8e3f728</tab-id>
+      </data>
+      <widgetClass>data-plotter-widget</widgetClass>
+      <state class="plotter-preferences">
+        <dataSettings class="preference-store-no-save">
+          <properties>
+            <property name="time.window" value="500.0"/>
+            <defaults/>
+          </properties>
+          <defaultProperties/>
+        </dataSettings>
+        <appearanceSettings class="preference-store-no-save">
+          <properties>
+            <property name="legend.size" value="158"/>
+            <property name="legend.type" value="full"/>
+            <property name="color.scheme" value="LIGHT"/>
+            <property name="crosshair" value="false"/>
+            <defaults/>
+          </properties>
+          <defaultProperties/>
+        </appearanceSettings>
+      </state>
+    </widget-storage-container>
+  </widgets>
+  <variables-overwritten>true</variables-overwritten>
+  <exception-variable-names/>
+  <scripts/>
+  <preferences>
+    <properties>
+      <property name="paramTab.valueColumn.size" value="104"/>
+      <property name="sashSizeWorkspace" value="277"/>
+      <property name="sashWeightWorkspace" value="277"/>
+      <property name="sashSizeWorkspaceConsole" value="1040"/>
+      <property name="paramTab.sourceColumn.size" value="100"/>
+      <property name="mainTreeVariablesParametersFilter" value="allow-all"/>
+      <property name="sashWeightConsole" value="475"/>
+      <property name="sashSizeTree" value="238"/>
+      <property name="sashWeightWorkspaceConsole" value="1343"/>
+      <property name="paramTab.descriptionColumn.size" value="442"/>
+      <property name="speedup" value="0.0"/>
+      <property name="paramTab.nameColumn.size" value="171"/>
+      <property name="sashSizeConsole" value="215"/>
+      <property name="sashWeightTree" value="238"/>
+      <property name="variableSeparator" value="_"/>
+      <defaults>
+        <property name="sashWeightWorkspaceConsole" value=""/>
+        <property name="sashSizeWorkspaceConsole" value=""/>
+        <property name="mainTreeVariablesParametersFilter" value=""/>
+        <property name="speedupRecoveryPolicy" value="RECOVER_BY_SPEEDUP"/>
+        <property name="saveWorkingDir" value="SAVE_RELATIVE"/>
+        <property name="splitVariablesByRegex" value="false"/>
+        <property name="sashWeightWorkspace" value=""/>
+        <property name="useGrid" value="true"/>
+        <property name="restrictRealCan" value="true"/>
+        <property name="sashWeightTree" value=""/>
+        <property name="sashSizeConsole" value=""/>
+        <property name="variableSeparator" value="_:"/>
+        <property name="sashSizeTree" value=""/>
+        <property name="paramTab.nameColumn.size" value=""/>
+        <property name="naturalOrderTreeSorting" value="true"/>
+        <property name="splitVariablesRegex" value=""/>
+        <property name="speedup" value="1.0"/>
+        <property name="sashWeightConsole" value=""/>
+        <property name="realTime" value="false"/>
+        <property name="separateVariables" value="false"/>
+        <property name="macroStep" value="0.01"/>
+        <property name="pluginPaths" value=""/>
+        <property name="startTime" value="0.0"/>
+        <property name="paramTab.descriptionColumn.size" value=""/>
+        <property name="paramTab.sourceColumn.size" value=""/>
+        <property name="gridY" value="5"/>
+        <property name="caseSensitiveTreeSorting" value="false"/>
+        <property name="gridX" value="5"/>
+        <property name="sashSizeWorkspace" value=""/>
+        <property name="verbosity" value="4"/>
+        <property name="paramTab.valueColumn.size" value=""/>
+        <property name="paramsIniConfigPath" value=""/>
+      </defaults>
+    </properties>
+    <defaultProperties>
+      <property name="sashWeightWorkspaceConsole" value=""/>
+      <property name="sashSizeWorkspaceConsole" value=""/>
+      <property name="mainTreeVariablesParametersFilter" value=""/>
+      <property name="speedupRecoveryPolicy" value="RECOVER_BY_SPEEDUP"/>
+      <property name="saveWorkingDir" value="SAVE_RELATIVE"/>
+      <property name="splitVariablesByRegex" value="false"/>
+      <property name="sashWeightWorkspace" value=""/>
+      <property name="useGrid" value="true"/>
+      <property name="restrictRealCan" value="true"/>
+      <property name="sashWeightTree" value=""/>
+      <property name="sashSizeConsole" value=""/>
+      <property name="variableSeparator" value="_:"/>
+      <property name="sashSizeTree" value=""/>
+      <property name="paramTab.nameColumn.size" value=""/>
+      <property name="naturalOrderTreeSorting" value="true"/>
+      <property name="splitVariablesRegex" value=""/>
+      <property name="speedup" value="1.0"/>
+      <property name="sashWeightConsole" value=""/>
+      <property name="realTime" value="false"/>
+      <property name="separateVariables" value="false"/>
+      <property name="macroStep" value="0.01"/>
+      <property name="pluginPaths" value=""/>
+      <property name="startTime" value="0.0"/>
+      <property name="paramTab.descriptionColumn.size" value=""/>
+      <property name="paramTab.sourceColumn.size" value=""/>
+      <property name="gridY" value="5"/>
+      <property name="caseSensitiveTreeSorting" value="false"/>
+      <property name="gridX" value="5"/>
+      <property name="sashSizeWorkspace" value=""/>
+      <property name="verbosity" value="4"/>
+      <property name="paramTab.valueColumn.size" value=""/>
+      <property name="paramsIniConfigPath" value=""/>
+    </defaultProperties>
+  </preferences>
+  <auto-fill/>
+  <transformations>
+    <transformation source-major-version="2" source-minor-version="5" destination-major-version="2" destination-minor-version="4">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;4&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress any DiffWidget --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container&quot;&gt;&#xd;
+		&lt;xsl:if test=&quot;not(./widget/@class) or ./widget/@class != &apos;diff-widget&apos;&quot;&gt;&#xd;
+			&lt;xsl:copy&gt;&#xd;
+				&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+			&lt;/xsl:copy&gt;&#xd;
+		&lt;/xsl:if&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&#xd;
+	&lt;!--&#xd;
+		Rename element silver.plugins.breakpoint.Breakpoint to breakpoint&#xd;
+	--&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget/breakpoints/breakpoint&quot;&gt;&#xd;
+		&lt;xsl:element name=&quot;silver.plugins.breakpoint.Breakpoint&quot;&gt;&#xd;
+			&lt;xsl:apply-templates /&gt;&#xd;
+		&lt;/xsl:element&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>DiffWidget removed</message>
+    </transformation>
+    <transformation source-major-version="2" source-minor-version="6" destination-major-version="2" destination-minor-version="5">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;5&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Rename &quot;assignment-widget&quot; element to &quot;assignement-widget&quot; --&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;assignment-widget&apos;]&quot;&gt;&#xd;
+		&lt;widget class=&quot;assignement-widget&quot;&gt;&#xd;
+			&lt;xsl:apply-templates /&gt;&#xd;
+		&lt;/widget&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Rename element expressions to assignments in assignment-widget --&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;assignment-widget&apos;]/expressions&quot;&gt;&#xd;
+		&lt;xsl:element name=&quot;assignments&quot;&gt;&#xd;
+			&lt;xsl:apply-templates /&gt;&#xd;
+		&lt;/xsl:element&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Rename element expressions to assignments in breakpoint-widget --&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;breakpoint-widget&apos;]/expressions&quot;&gt;&#xd;
+		&lt;xsl:element name=&quot;breakpoints&quot;&gt;&#xd;
+			&lt;xsl:apply-templates /&gt;&#xd;
+		&lt;/xsl:element&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!--&#xd;
+		Rename element expression to assignment (field in class assignment)&#xd;
+	--&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;assignment-widget&apos;]/expressions/assignment/expression&quot;&gt;&#xd;
+		&lt;xsl:element name=&quot;assignment&quot;&gt;&#xd;
+			&lt;xsl:apply-templates /&gt;&#xd;
+		&lt;/xsl:element&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Restructure of breakpoint widget and assignment widget</message>
+    </transformation>
+    <transformation source-major-version="2" source-minor-version="7" destination-major-version="2" destination-minor-version="6">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;6&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress newly added elements in FileWriteWidget --&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/use-config-file-vars&quot; /&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/use-module-vars&quot; /&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/variables-module&quot; /&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/module-read-variables&quot; /&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/module-write-variables&quot; /&gt;&#xd;
+	&lt;xsl:template&#xd;
+		match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/module-modify-variables&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Added new fields to FileWriteWidget</message>
+    </transformation>
+    <transformation source-major-version="2" source-minor-version="8" destination-major-version="2" destination-minor-version="7">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;7&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress element &quot;gui-module&quot; from modules list --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/modules/gui-module&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>GUI module can be set to any arbitrary position</message>
+    </transformation>
+    <transformation source-major-version="2" source-minor-version="9" destination-major-version="2" destination-minor-version="8">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;8&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress element &quot;scripts&quot; from workspace main element--&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/scripts&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Introduced scripting to Silver.</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="0" destination-major-version="2" destination-minor-version="9">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+                xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;9&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/preferences/properties/property&quot;&gt;&#xd;
+		&lt;xsl:choose&gt;&#xd;
+			&lt;!-- tickSize (version 2.9, in miliseconds) &lt;-&gt; macroStep (version 3.0, in seconds) --&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;macroStep&apos;&quot;&gt;&#xd;
+				&lt;xsl:choose&gt;&#xd;
+					&lt;xsl:when test=&quot;@value * 1000 &amp;lt; 1&quot;&gt;&#xd;
+						&lt;xsl:message&gt;&#xd;
+							Macro step conversion failed, because the minimum value in the current&#xd;
+							version of Silver is 1 milisecond. Original macro step was&#xd;
+							&lt;xsl:value-of select=&quot;@value&quot; /&gt;.&#xd;
+						&lt;/xsl:message&gt;&#xd;
+						&lt;property name=&quot;tickSize&quot; value=&quot;1&quot; /&gt;&#xd;
+					&lt;/xsl:when&gt;&#xd;
+					&lt;xsl:otherwise&gt;&#xd;
+						&lt;property name=&quot;tickSize&quot; value=&quot;{@value * 1000}&quot; /&gt;&#xd;
+					&lt;/xsl:otherwise&gt;&#xd;
+				&lt;/xsl:choose&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;!-- Replace speedup with ignoreRealTime. 1 =&gt; false, anything else =&gt; true --&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;speedup&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;ignoreRealtime&quot; value=&quot;{number(@value) != 1}&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:otherwise&gt;&#xd;
+				&lt;xsl:copy&gt;&#xd;
+					&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+				&lt;/xsl:copy&gt;&#xd;
+			&lt;/xsl:otherwise&gt;&#xd;
+		&lt;/xsl:choose&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/preferences/properties/defaults/property&quot;&gt;&#xd;
+		&lt;xsl:choose&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;macroStep&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;tickSize&quot; value=&quot;10&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;speedup&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;ignoreRealtime&quot; value=&quot;false&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:otherwise&gt;&#xd;
+				&lt;xsl:copy&gt;&#xd;
+					&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+				&lt;/xsl:copy&gt;&#xd;
+			&lt;/xsl:otherwise&gt;&#xd;
+		&lt;/xsl:choose&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/preferences/defaultProperties/property&quot;&gt;&#xd;
+		&lt;xsl:choose&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;macroStep&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;tickSize&quot; value=&quot;10&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;macroStep&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;ignoreRealtime&quot; value=&quot;false&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:otherwise&gt;&#xd;
+				&lt;xsl:copy&gt;&#xd;
+					&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+				&lt;/xsl:copy&gt;&#xd;
+			&lt;/xsl:otherwise&gt;&#xd;
+		&lt;/xsl:choose&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Macro step miliseconds -&gt; seconds </message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="1" destination-major-version="3" destination-minor-version="0">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+                xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;0&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress the &quot;silversim-modify-string&quot; from widget data element.--&gt;&#xd;
+	&lt;xsl:template&#xd;
+			match=&quot;/workspace/widgets/widget-storage-container/data/silversim-modify-string&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added silversim-modify-string for some widgets</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="2" destination-major-version="3" destination-minor-version="1">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+                xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;1&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress the &quot;tabs&quot; element.--&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/tabs&quot; /&gt;&#xd;
+&#xd;
+	&lt;!-- Suppress the &quot;tab-id&quot; from widget data element.--&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/data/tab-id&quot; /&gt;&#xd;
+&#xd;
+	&lt;!-- rename attribute /workspace/widgets/widget-storage-container/widget@class from&#xd;
+	&quot;silver.plugins.calibration.CalibrationWidget&quot; to &quot;calibration-widget&quot; --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;calibration-widget&apos;]&quot;&gt;&#xd;
+		&lt;widget class=&quot;silver.plugins.calibration.CalibrationWidget&quot;&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*[local-name() != &apos;class&apos;]|node()&quot; /&gt;&#xd;
+		&lt;/widget&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Rename Rapid Prototyping mode to realtime mode --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/preferences/properties/property&quot;&gt;&#xd;
+		&lt;xsl:choose&gt;&#xd;
+			&lt;!-- Replace realTime with rapidPrototyping --&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;realTime&apos; and @value = &apos;true&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;rapidPrototyping&quot; value=&quot;true&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;!-- Replace rtPauseCondition with rpPauseCondition --&gt;&#xd;
+			&lt;xsl:when test=&quot;@name = &apos;rtPauseCondition&apos;&quot;&gt;&#xd;
+				&lt;property name=&quot;rpPauseCondition&quot; value=&quot;{@value}&quot; /&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:otherwise&gt;&#xd;
+				&lt;xsl:copy&gt;&#xd;
+					&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+				&lt;/xsl:copy&gt;&#xd;
+			&lt;/xsl:otherwise&gt;&#xd;
+		&lt;/xsl:choose&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added tabs to widgets pane</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="3" destination-major-version="3" destination-minor-version="2">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+    &lt;xsl:output method=&quot;xml&quot;/&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+        &lt;xsl:copy&gt;&#xd;
+            &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+        &lt;/xsl:copy&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+        &lt;minor-version&gt;2&lt;/minor-version&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Remove ARRAY allowed mode  --&gt;&#xd;
+    &lt;xsl:template&#xd;
+            match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;calibration-widget&apos;]/data-model/allowed-modes/calibration-mode&quot;&gt;&#xd;
+        &lt;xsl:if test=&quot;. != &apos;ARRAY&apos;&quot;&gt;&#xd;
+            &lt;xsl:copy&gt;&#xd;
+                &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+            &lt;/xsl:copy&gt;&#xd;
+        &lt;/xsl:if&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Change current calibration mode from ARRAY to TABLE --&gt;&#xd;
+    &lt;xsl:template&#xd;
+            match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;calibration-widget&apos;]/data-model/mode&quot;&gt;&#xd;
+        &lt;xsl:choose&gt;&#xd;
+            &lt;xsl:when test=&quot;. = &apos;ARRAY&apos;&quot;&gt;&#xd;
+                &lt;mode&gt;TABLE&lt;/mode&gt;&#xd;
+            &lt;/xsl:when&gt;&#xd;
+            &lt;xsl:otherwise&gt;&#xd;
+                &lt;xsl:copy&gt;&#xd;
+                    &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+                &lt;/xsl:copy&gt;&#xd;
+            &lt;/xsl:otherwise&gt;&#xd;
+        &lt;/xsl:choose&gt;&#xd;
+&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Warn users about delay function in assignment widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets&quot;&gt;&#xd;
+        &lt;xsl:copy&gt;&#xd;
+            &lt;xsl:if&#xd;
+                    test=&quot;widget-storage-container/widget[@class=&apos;assignment-widget&apos;]/expressions/assignment/expression[contains(., &apos;delay&apos;)]&quot;&gt;&#xd;
+                &lt;widget-storage-container&gt;&#xd;
+                    &lt;data&gt;&#xd;
+                        &lt;widget-id&gt;&#xd;
+                            &lt;xsl:value-of select=&quot;generate-id()&quot;/&gt;&#xd;
+                        &lt;/widget-id&gt;&#xd;
+                        &lt;internal-bounds&gt;&#xd;
+                            &lt;x&gt;20&lt;/x&gt;&#xd;
+                            &lt;y&gt;20&lt;/y&gt;&#xd;
+                            &lt;width&gt;600&lt;/width&gt;&#xd;
+                            &lt;height&gt;250&lt;/height&gt;&#xd;
+                        &lt;/internal-bounds&gt;&#xd;
+                        &lt;resizable&gt;true&lt;/resizable&gt;&#xd;
+                        &lt;minMaxInternal&gt;0&lt;/minMaxInternal&gt;&#xd;
+                        &lt;minMaxExternal&gt;0&lt;/minMaxExternal&gt;&#xd;
+                        &lt;outer&gt;false&lt;/outer&gt;&#xd;
+                        &lt;hand-sized&gt;true&lt;/hand-sized&gt;&#xd;
+                        &lt;z-index&gt;999999&lt;/z-index&gt;&#xd;
+                        &lt;descriptor&gt;&#xd;
+                            &lt;name&gt;Conversion notification&lt;/name&gt;&#xd;
+                            &lt;description&gt;Widget created in sil file transformation&lt;/description&gt;&#xd;
+                        &lt;/descriptor&gt;&#xd;
+                    &lt;/data&gt;&#xd;
+                    &lt;widget class=&quot;notepad-widget&quot;&gt;&#xd;
+                        &lt;plainText&gt;This project was saved with a newer version of Silver. At least one assignment widget (or distortion widget) uses the delay function. To use all features of this SIL file, please upgrade Silver.&#xd;
+                        &lt;/plainText&gt;&#xd;
+                    &lt;/widget&gt;&#xd;
+                &lt;/widget-storage-container&gt;&#xd;
+            &lt;/xsl:if&gt;&#xd;
+            &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+        &lt;/xsl:copy&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added Array mode to Calibration widget</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="4" destination-major-version="3" destination-minor-version="3">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+    &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+        &lt;xsl:copy&gt;&#xd;
+            &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+        &lt;/xsl:copy&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+        &lt;minor-version&gt;3&lt;/minor-version&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Change CHECK to TOGGLE in button widget  --&gt;&#xd;
+    &lt;xsl:template&#xd;
+            match=&quot;/workspace/widgets/widget-storage-container/data/write-variables-list/list/widget-variable/properties/entry/button-type&quot;&gt;&#xd;
+        &lt;xsl:choose&gt;&#xd;
+            &lt;xsl:when test=&quot;. = &apos;CHECK&apos;&quot;&gt;&#xd;
+                &lt;button-type&gt;TOGGLE&lt;/button-type&gt;&#xd;
+            &lt;/xsl:when&gt;&#xd;
+            &lt;xsl:otherwise&gt;&#xd;
+                &lt;xsl:copy&gt;&#xd;
+                    &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+                &lt;/xsl:copy&gt;&#xd;
+            &lt;/xsl:otherwise&gt;&#xd;
+        &lt;/xsl:choose&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Transform checkbox widgets to toggle button widgets --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;checkbox-widget&apos;]&quot;&gt;&#xd;
+        &lt;widget class=&quot;toggle-button-widget&quot;&gt;&#xd;
+            &lt;xsl:apply-templates/&gt;&#xd;
+        &lt;/widget&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Change default type for checkbox widgets from CHECK to TOGGLE --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;checkbox-widget&apos;]/defaultType&quot;&gt;&#xd;
+        &lt;xsl:choose&gt;&#xd;
+            &lt;xsl:when test=&quot;. = &apos;CHECK&apos;&quot;&gt;&#xd;
+                &lt;defaultType&gt;TOGGLE&lt;/defaultType&gt;&#xd;
+            &lt;/xsl:when&gt;&#xd;
+            &lt;xsl:otherwise&gt;&#xd;
+                &lt;xsl:copy&gt;&#xd;
+                    &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+                &lt;/xsl:copy&gt;&#xd;
+            &lt;/xsl:otherwise&gt;&#xd;
+        &lt;/xsl:choose&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Remove condition from enabling modules --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/modules/module/enabled[@condition]&quot;&gt;&#xd;
+        &lt;enabled&gt;true&lt;/enabled&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Remove ignored variables list from diff widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;diff-widget&apos;]/ignored-variables&quot;/&gt;&#xd;
+&#xd;
+    &lt;!-- Change radio-value-table to List&lt;Pair&lt;String, Double&gt; in radio button widget --&gt;&#xd;
+    &lt;xsl:template&#xd;
+            match=&quot;/workspace/widgets/widget-storage-container[./widget[@class = &apos;radio-button-widget&apos;]]/data/write-variables-list/list/widget-variable/properties/entry[./string/text()=&apos;valueTable&apos;]&quot;&gt;&#xd;
+        &lt;entry&gt;&#xd;
+            &lt;string&gt;radioButtonConfigure&lt;/string&gt;&#xd;
+            &lt;list&gt;&#xd;
+                &lt;xsl:for-each select=&quot;radio-value-table/radio-value-table-row&quot;&gt;&#xd;
+                    &lt;pair&gt;&#xd;
+                        &lt;first class=&quot;string&quot;&gt;&#xd;
+                            &lt;xsl:value-of select=&quot;label&quot;/&gt;&#xd;
+                        &lt;/first&gt;&#xd;
+                        &lt;second class=&quot;double&quot;&gt;&#xd;
+                            &lt;xsl:value-of select=&quot;value&quot;/&gt;&#xd;
+                        &lt;/second&gt;&#xd;
+                    &lt;/pair&gt;&#xd;
+                &lt;/xsl:for-each&gt;&#xd;
+            &lt;/list&gt;&#xd;
+        &lt;/entry&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Change value-table to List&lt;Pair&lt;String, Double&gt; in data plotter widget --&gt;&#xd;
+    &lt;xsl:template&#xd;
+            match=&quot;/workspace/widgets/widget-storage-container[./widgetClass/text() = &apos;data-plotter-widget&apos;]/data/read-variables-list/list/widget-variable/properties/entry[./string/text()=&apos;valueTable&apos;]/value-table&quot;&gt;&#xd;
+        &lt;list&gt;&#xd;
+            &lt;xsl:for-each select=&quot;value-table-row&quot;&gt;&#xd;
+                &lt;pair&gt;&#xd;
+                    &lt;first class=&quot;string&quot;&gt;&#xd;
+                        &lt;xsl:value-of select=&quot;label&quot;/&gt;&#xd;
+                    &lt;/first&gt;&#xd;
+                    &lt;second class=&quot;double&quot;&gt;&#xd;
+                        &lt;xsl:value-of select=&quot;value&quot;/&gt;&#xd;
+                    &lt;/second&gt;&#xd;
+                &lt;/pair&gt;&#xd;
+            &lt;/xsl:for-each&gt;&#xd;
+        &lt;/list&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Convert distortion widgets to assignment widgets --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;distortion-widget&apos;]&quot;&gt;&#xd;
+        &lt;widget class=&quot;assignment-widget&quot;&gt;&#xd;
+            &lt;expressionColumnWidth&gt;100&lt;/expressionColumnWidth&gt;&#xd;
+            &lt;commentColumnWidth&gt;100&lt;/commentColumnWidth&gt;&#xd;
+            &lt;expressions&gt;&#xd;
+                &lt;xsl:variable name=&quot;factor&quot; select=&quot;modifier/factor&quot;/&gt;&#xd;
+                &lt;xsl:variable name=&quot;offset&quot; select=&quot;modifier/offset&quot;/&gt;&#xd;
+                &lt;xsl:variable name=&quot;sinusM&quot; select=&quot;modifier/sinusM&quot;/&gt;&#xd;
+                &lt;xsl:variable name=&quot;sinusP&quot; select=&quot;modifier/sinusP&quot;/&gt;&#xd;
+                &lt;xsl:variable name=&quot;noise&quot; select=&quot;modifier/noise&quot;/&gt;&#xd;
+                &lt;xsl:variable name=&quot;delay&quot; select=&quot;modifier/delay&quot;/&gt;&#xd;
+                &lt;xsl:for-each select=&quot;../data/modify-variables-list/list/widget-variable/name&quot;&gt;&#xd;
+                    &lt;xsl:variable name=&quot;var&quot; select=&quot;.&quot;/&gt;&#xd;
+                    &lt;assignment&gt;&#xd;
+                        &lt;expression&gt;&#xd;
+                            &lt;xsl:value-of&#xd;
+                                    select=&quot;concat($var, &apos;= (delay(&apos;, $var, &apos;,&apos;, $delay,&apos;/1000)&apos;,&apos; * &apos;,$factor,&apos; + &apos;, $offset,&apos; + sin(time / &apos;,$sinusP,&apos; * (2 * 3.1415676535897985)) * &apos;, $sinusM,&apos; + (2*random(32767)/32767 - 1) * &apos;,$noise,&apos;)&apos;)&quot;/&gt;&#xd;
+                        &lt;/expression&gt;&#xd;
+                        &lt;enabled&gt;true&lt;/enabled&gt;&#xd;
+                    &lt;/assignment&gt;&#xd;
+                &lt;/xsl:for-each&gt;&#xd;
+                &lt;assignment&gt;&#xd;
+                    &lt;expression/&gt;&#xd;
+                    &lt;enabled&gt;true&lt;/enabled&gt;&#xd;
+                &lt;/assignment&gt;&#xd;
+            &lt;/expressions&gt;&#xd;
+        &lt;/widget&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Set realTime mode to true if restrictRealCan is false --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/preferences/properties/property[@name = &apos;restrictRealCan&apos; and @value = &apos;false&apos;]&quot;&gt;&#xd;
+        &lt;property name=&quot;realTime&quot; value=&quot;true&quot;/&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added CHECK mode to button widgets, ignore list to diff widget, enabled condition to modules</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="5" destination-major-version="3" destination-minor-version="4">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+    &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+        &lt;xsl:copy&gt;&#xd;
+            &lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+        &lt;/xsl:copy&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+        &lt;minor-version&gt;4&lt;/minor-version&gt;&#xd;
+    &lt;/xsl:template&gt;&#xd;
+&#xd;
+    &lt;!-- Remove can-msg-widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container[./widget/@class=&apos;can-msg-widget&apos;]&quot; /&gt;&#xd;
+&#xd;
+    &lt;!-- Eliminate toolbar column from assignment-widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;assignment-widget&apos;]/toolbarColumnWidth&quot; /&gt;&#xd;
+&#xd;
+    &lt;!-- Eliminate toolbar column from breakpoint-widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;breakpoint-widget&apos;]/toolbarColumnWidth&quot; /&gt;&#xd;
+&#xd;
+    &lt;!-- Eliminate regex filter file from file-write-widget --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/use-regex-filter-file-vars&quot; /&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/regex-filter-file&quot; /&gt;&#xd;
+&#xd;
+    &lt;!-- Eliminate remote mode from modules --&gt;&#xd;
+    &lt;xsl:template match=&quot;/workspace/modules/module/remote-module-cluster&quot; /&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added can-msg-widget</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="6" destination-major-version="3" destination-minor-version="5">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+	&lt;xsl:copy&gt;&#xd;
+		&lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+	&lt;/xsl:copy&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+	&lt;minor-version&gt;5&lt;/minor-version&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;!-- Remove resize policy from canvas-widget --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;canvas-widget&apos;]/resize-policy&quot; /&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xslt>
+      <message>Added resize-policy to canvas-widget</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="7" destination-major-version="3" destination-minor-version="6">
+      <xslt>&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+	&lt;xsl:copy&gt;&#xd;
+		&lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+	&lt;/xsl:copy&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+	&lt;minor-version&gt;6&lt;/minor-version&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;!-- Remove variable rename rules --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/modules/module/input-rename-rules-file&quot; /&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/modules/module/output-rename-rules-file&quot; /&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/modules/module/modify-rename-rules-file&quot; /&gt;&#xd;
+&#xd;
+&lt;!-- Remove can name for prefix from can-msg-widget --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;can-msg-widget&apos;]/can-name-prefix&quot; /&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;can-msg-widget&apos;]/channel-name-prefix&quot; /&gt;&#xd;
+&#xd;
+&lt;!-- Remove axis-names from calibration widget --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;calibration-widget&apos;]/axis-names&quot; /&gt;&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Added variable renaming for modules, CAN name for prefix to CAN bus widget</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="8" destination-major-version="3" destination-minor-version="7">
+      <xslt>&lt;!--&#xd;
+  ~ Copyright QTronic GmbH. All rights reserved.&#xd;
+  --&gt;&#xd;
+&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+	&lt;xsl:copy&gt;&#xd;
+		&lt;xsl:apply-templates select=&quot;@*|node()&quot;/&gt;&#xd;
+	&lt;/xsl:copy&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+	&lt;minor-version&gt;7&lt;/minor-version&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;!-- Remove auto-fill --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/auto-fill&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Added auto-fill for UI elements</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="9" destination-major-version="3" destination-minor-version="8">
+      <xslt>&lt;!--&#xd;
+  ~ Copyright QTronic GmbH. All rights reserved.&#xd;
+  --&gt;&#xd;
+&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; /&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+&lt;xsl:copy&gt;&#xd;
+&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+&lt;/xsl:copy&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+&lt;minor-version&gt;8&lt;/minor-version&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;!-- Remove UUID from modules --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/modules/module/uuid&quot; /&gt;&#xd;
+&#xd;
+&lt;!-- Remove variables-module-uuid from file write widget configuration --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;file-write-widget&apos;]/variables-module-uuid&quot; /&gt;&#xd;
+&#xd;
+&lt;!-- Remove the axis definition from calibration widget --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;calibration-widget&apos;]/axis-definition&quot; /&gt;&#xd;
+&#xd;
+&lt;!-- Remove tolerances from diff-widget --&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;diff-widget&apos;]/absolute-tolerance&quot; /&gt;&#xd;
+&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget[@class=&apos;diff-widget&apos;]/relative-tolerance&quot; /&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Added variables for absolute tolerance and relative tolerance</message>
+    </transformation>
+    <transformation source-major-version="3" source-minor-version="10" destination-major-version="3" destination-minor-version="9">
+      <xslt>&lt;!--&#xd;
+  ~ Copyright QTronic GmbH. All rights reserved.&#xd;
+  --&gt;&#xd;
+&#xd;
+&lt;!-- Applies back changes done in Silver 3.3.0 --&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;@*|node()&quot;&gt;&#xd;
+		&lt;xsl:copy&gt;&#xd;
+			&lt;xsl:apply-templates select=&quot;@*|node()&quot; /&gt;&#xd;
+		&lt;/xsl:copy&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/workspace/minor-version&quot;&gt;&#xd;
+		&lt;minor-version&gt;9&lt;/minor-version&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+	&lt;!-- Remove background, foreground and font from stack widgets --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget/background&quot; /&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget/foreground&quot; /&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container/widget/font&quot; /&gt;&#xd;
+&#xd;
+	&lt;!-- Remove multiply-macro-step-by from modules --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/modules/module/multiply-macro-step&quot; /&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/modules/module/macro-step-multiplier&quot; /&gt;&#xd;
+&#xd;
+	&lt;!-- Remove module diff widget --&gt;&#xd;
+	&lt;xsl:template match=&quot;/workspace/widgets/widget-storage-container[./widget/@class=&apos;module-diff-widget&apos;]&quot; /&gt;&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xslt>
+      <message>Added variables for absolute tolerance and relative tolerance</message>
+    </transformation>
+  </transformations>
+</workspace>
