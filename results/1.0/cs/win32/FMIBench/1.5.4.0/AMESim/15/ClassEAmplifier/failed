@@ -1,0 +1,2 @@
+Simulation fails at the end, potentially due to different definitions
+for end-of-simulation time, will need further investigation.

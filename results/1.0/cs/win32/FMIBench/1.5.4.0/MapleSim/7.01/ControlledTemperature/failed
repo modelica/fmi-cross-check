@@ -1,0 +1,4 @@
+While the first output tracks the reference data the second output
+deviates completely, potentially due to a missed turn on of the
+heating element of the simulation.  Further investigation would
+be needed.

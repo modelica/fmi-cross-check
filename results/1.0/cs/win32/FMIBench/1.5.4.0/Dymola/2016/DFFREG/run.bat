@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win32\Dymola\2016\DFFREG\DFFREG.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win32\Dymola\2016\DFFREG\run\" -t 25 -s 0.05

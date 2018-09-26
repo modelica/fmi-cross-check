@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win64\SimulationX\3.6\ControlledTemperature\ControlledTemperature.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win64\SimulationX\3.6\ControlledTemperature\run\" -t 10.0 -s 1e-2

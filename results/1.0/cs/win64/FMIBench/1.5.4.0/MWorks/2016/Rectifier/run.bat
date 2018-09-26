@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win64\MWorks\2016\Rectifier\Rectifier.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_1.0\CoSimulation\win64\MWorks\2016\Rectifier\run\" -t 0.1 -s 0.0002 -s 2e-4

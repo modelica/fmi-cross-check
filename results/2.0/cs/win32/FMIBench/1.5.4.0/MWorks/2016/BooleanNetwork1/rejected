@@ -1,0 +1,5 @@
+All outputs except y5 track the reference results, with y5 seeming to
+be wrong reference results (i.e. from a different version of the FMU),
+as already demonstrated by other tools.  We judge the result as rejected,
+whereas some tools judge this result as passed even for the same 
+discrepancies.

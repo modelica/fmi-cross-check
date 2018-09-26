@@ -1,0 +1,3 @@
+The reference values differ from the FMUchecker values for this
+example with an anomaly at 5s. We are treating this as rejected
+for the time being.

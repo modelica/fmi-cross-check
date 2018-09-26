@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\CATIA\R2016x\CoupledClutches\CoupledClutches.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\CATIA\R2016x\CoupledClutches\run\" -t 1.5

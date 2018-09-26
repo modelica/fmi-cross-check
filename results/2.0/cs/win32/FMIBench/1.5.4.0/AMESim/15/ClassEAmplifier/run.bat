@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\AMESim\15\ClassEAmplifier\ClassEAmplifier.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\AMESim\15\ClassEAmplifier\run\" -t 1e-4 -s 1e-7 -s 1e-7

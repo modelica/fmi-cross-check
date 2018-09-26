@@ -1,0 +1,4 @@
+Rejecting this test FMU since the reference values contain erroneous
+behavior which was not replicated by any of the tools, and there are
+differences in naming between reference file and FMU, as well as
+other non-conformities.

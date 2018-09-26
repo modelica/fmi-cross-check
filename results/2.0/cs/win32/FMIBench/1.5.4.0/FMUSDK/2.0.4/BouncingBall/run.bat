@@ -1,0 +1,1 @@
+FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\FMUSDK\2.0.4\BouncingBall\bouncingBall.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\FMUSDK\2.0.4\BouncingBall\run\" -t 4 -s 0.01 -ov h -ov der(h) -ov v -ov der(v) -ov g -ov e

@@ -1,0 +1,4 @@
+The FMU output diverges wildly from the reference output, potentially
+due to dependence of the FMU on external communication step size for
+the choice of internal solver steps, or some other reason.  Further
+research will be needed.

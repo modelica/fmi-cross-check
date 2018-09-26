@@ -1,0 +1,4 @@
+Failed to reproduce the results within predetermined tolerances,
+further research on reasons seems necessary, but potentially
+resides in different solvers being used for reference generation,
+vs. fixed-step Euler in FMIBench simulator.

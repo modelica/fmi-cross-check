@@ -1,0 +1,4 @@
+For unknown reasons the FMU results contain only all-zero outputs
+for the relevant reference values, unlike the 1.0 FMU and unlike
+the results for the FMUChecker.  We will investigate further why
+this happens.
