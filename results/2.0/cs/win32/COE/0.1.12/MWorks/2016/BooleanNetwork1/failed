@@ -1,0 +1,46 @@
+ERROR [main] (RequestProcessors.java:273) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model defintion in: file:/X:/Test_FMUs/FMI_2.0/CoSimulation/win32/MWorks/2016/BooleanNetwork1/BooleanNetwork1.fmu Reason:  Invalid configuration of scalar variables: 
+rSFlipFlop.R Error: For a continuous variable the type has to be Real
+sampleTriggerReset.y Error: For a continuous variable the type has to be Real
+rSFlipFlop.QI Error: For a continuous variable the type has to be Real
+rSFlipFlop.nor1.u1 Error: For a continuous variable the type has to be Real
+rSFlipFlop.pre.y Error: For a continuous variable the type has to be Real
+rSFlipFlop.nor1.y Error: For a continuous variable the type has to be Real
+rSFlipFlop.Q Error: For a continuous variable the type has to be Real
+rSFlipFlop.nor.u2 Error: For a continuous variable the type has to be Real
+sampleTriggerSet.y Error: For a continuous variable the type has to be Real
+rSFlipFlop.S Error: For a continuous variable the type has to be Real
+rSFlipFlop.nor.y Error: For a continuous variable the type has to be Real
+showValue6.showActive Error: For a continuous variable the type has to be Real
+showValue5.showActive Error: For a continuous variable the type has to be Real
+showValue1.showNumber Error: For a continuous variable the type has to be Real
+triggeredAdd.trigger Error: For a continuous variable the type has to be Real
+triggeredAdd.u Error: For a continuous variable the type has to be Real
+set1.u[2] Error: For a continuous variable the type has to be Real
+set1.u[1] Error: For a continuous variable the type has to be Real
+showValue4.showActive Error: For a continuous variable the type has to be Real
+or2.y Error: For a continuous variable the type has to be Real
+showValue3.showActive Error: For a continuous variable the type has to be Real
+xor1.y Error: For a continuous variable the type has to be Real
+showValue2.showActive Error: For a continuous variable the type has to be Real
+or1.y Error: For a continuous variable the type has to be Real
+showValue.showActive Error: For a continuous variable the type has to be Real
+falling.u Error: For a continuous variable the type has to be Real
+booleanPulse1.y Error: For a continuous variable the type has to be Real
+integerConstant.y Error: For a continuous variable the type has to be Real
+onDelay.y Error: For a continuous variable the type has to be Real
+nand1.y Error: For a continuous variable the type has to be Real
+and1.y Error: For a continuous variable the type has to be Real
+booleanPulse2.y Error: For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:104)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:264)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:316)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:175)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:133)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:167)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:283)
+

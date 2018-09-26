@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=fullRobot.fmu --Options=fullRobot_ref.opt --Reference=fullRobot_ref.csv --Output=fullRobot_out.csv --FMUType=CS

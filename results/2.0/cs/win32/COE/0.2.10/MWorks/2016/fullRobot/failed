@@ -1,0 +1,172 @@
+ERROR [main] (RequestProcessors.java:295) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'axis2.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus2.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis2.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis2.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus1.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus4.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus3.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus5.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus6.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:131)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:286)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:328)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:178)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:136)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:170)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:290)
+
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'axis2.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus2.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis2.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis2.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus1.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis1.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus4.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis4.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus3.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis3.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus5.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis5.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.controlBus.axisControlBus6.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.controller.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'axis6.motor.axisControlBus.motion_ref': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[6]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[5]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[4]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[3]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.motion_ref_axisUsed.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.moving[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis6.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis5.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis4.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis3.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis2.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'pathPlanning.pathToAxis1.motion_ref_axisUsed.y': For a continuous variable the type has to be Real
+

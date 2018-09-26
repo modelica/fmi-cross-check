@@ -1,0 +1,80 @@
+ERROR [main] (RequestProcessors.java:295) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'rSFlipFlop.R': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'sampleTriggerReset.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.QI': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor1.u1': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.pre.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.Q': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor.u2': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'sampleTriggerSet.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.S': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue6.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue5.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue1.showNumber': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'triggeredAdd.trigger': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'triggeredAdd.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'set1.u[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'set1.u[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue4.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'or2.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue3.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'xor1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue2.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'or1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'falling.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'booleanPulse1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'integerConstant.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'onDelay.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'nand1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'and1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'booleanPulse2.y': For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:131)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:286)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:328)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:178)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:136)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:170)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:316)
+
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'rSFlipFlop.R': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'sampleTriggerReset.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.QI': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor1.u1': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.pre.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.Q': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor.u2': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'sampleTriggerSet.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.S': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'rSFlipFlop.nor.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue6.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue5.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue1.showNumber': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'triggeredAdd.trigger': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'triggeredAdd.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'set1.u[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'set1.u[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue4.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'or2.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue3.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'xor1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue2.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'or1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'showValue.showActive': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'falling.u': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'booleanPulse1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'integerConstant.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'onDelay.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'nand1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'and1.y': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'booleanPulse2.y': For a continuous variable the type has to be Real
+

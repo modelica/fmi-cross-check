@@ -1,0 +1,92 @@
+ERROR [main] (RequestProcessors.java:273) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model defintion in: file:/X:/Test_FMUs/FMI_2.0/CoSimulation/win32/MWorks/2016/fullRobot/fullRobot.fmu Reason:  Invalid configuration of scalar variables: 
+axis2.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus2.motion_ref Error: For a continuous variable the type has to be Real
+axis2.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis2.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis1.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus1.motion_ref Error: For a continuous variable the type has to be Real
+axis1.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis1.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis4.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus4.motion_ref Error: For a continuous variable the type has to be Real
+axis4.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis4.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus3.motion_ref Error: For a continuous variable the type has to be Real
+axis3.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis3.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis3.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus5.motion_ref Error: For a continuous variable the type has to be Real
+axis5.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis5.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis5.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.controlBus.axisControlBus6.motion_ref Error: For a continuous variable the type has to be Real
+axis6.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis6.controller.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+axis6.motor.axisControlBus.motion_ref Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[6] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[5] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[4] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[3] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[2] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.motion_ref_axisUsed.u Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.moving[1] Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis6.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis5.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis4.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis3.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis2.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+pathPlanning.pathToAxis1.motion_ref_axisUsed.y Error: For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:104)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:264)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:316)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:175)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:133)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:167)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:283)
+

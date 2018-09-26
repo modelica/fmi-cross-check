@@ -1,0 +1,36 @@
+ERROR [main] (RequestProcessors.java:295) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'dFFREG.delay.x[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.x[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.y[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataOut[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.y[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataOut[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataIn[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataIn[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.reset': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.clock': For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:131)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:286)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:328)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:178)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:136)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:170)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:290)
+
+Failed to load and parse model definition in: source Reason:  Invalid configuration of scalar variables: 
+Error in configuration of scalar variable 'dFFREG.delay.x[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.x[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.y[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataOut[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.delay.y[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataOut[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataIn[2]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.dataIn[1]': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.reset': For a continuous variable the type has to be Real
+Error in configuration of scalar variable 'dFFREG.clock': For a continuous variable the type has to be Real
+

@@ -1,0 +1,14 @@
+ERROR [main] (RequestProcessors.java:324) - Error in simulation
+org.intocps.orchestration.coe.AbortSimulationException: A FMU discarded the communication step current time 11.50.5 step size 0.5 and it is not possible to reset the complete simulation state of all FMUs so stopping NOW!. Status: Map(source.i -> Discard, stub.i -> OK)
+	at org.intocps.orchestration.coe.scala.CoeSimulator$.doStep(CoeSimulator.scala:348)
+	at org.intocps.orchestration.coe.scala.CoeSimulator$.doIntermediateSimulationStep(CoeSimulator.scala:192)
+	at org.intocps.orchestration.coe.scala.CoeSimulator$.doSimulationStep(CoeSimulator.scala:165)
+	at org.intocps.orchestration.coe.scala.CoeSimulator$.simulate(CoeSimulator.scala:69)
+	at org.intocps.orchestration.coe.scala.Coe.simulate(Coe.scala:79)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processSimulate(RequestProcessors.java:320)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.simulate(RequestHandler.java:282)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:181)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:133)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:191)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:283)
+

@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=DFFREG.fmu --Options=DFFREG_ref.opt --Reference=DFFREG_ref.csv --Output=DFFREG_out.csv --FMUType=CS

@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=TestModel1_sf.fmu --Options=TestModel1_sf_ref.opt --Reference=TestModel1_sf_ref.csv --Output=TestModel1_sf_out.csv --FMUType=ME

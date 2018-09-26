@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=EmbeddedCode.fmu --Options=EmbeddedCode_ref.opt --Reference=EmbeddedCode_ref.csv --Output=EmbeddedCode_out.csv --FMUType=ME

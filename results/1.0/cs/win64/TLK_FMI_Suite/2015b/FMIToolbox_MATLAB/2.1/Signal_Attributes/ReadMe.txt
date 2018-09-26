@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=Signal_Attributes.fmu --Options=Signal_Attributes_ref.opt --Reference=Signal_Attributes_ref.csv --Output=Signal_Attributes_out.csv --FMUType=CS

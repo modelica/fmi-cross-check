@@ -1,0 +1,13 @@
+ERROR [main] (RequestProcessors.java:295) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: An FMU library didn't load
+	source Load failed!!!
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:76)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:131)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:286)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:328)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:178)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:136)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:170)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:316)
+An FMU library didn't load
+	source Load failed!!!

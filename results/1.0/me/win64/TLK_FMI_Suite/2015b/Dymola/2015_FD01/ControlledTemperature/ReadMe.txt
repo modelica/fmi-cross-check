@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=ControlledTemperature.fmu --Options=ControlledTemperature_ref.opt --Reference=ControlledTemperature_ref.csv --Output=ControlledTemperature_out.csv --FMUType=ME

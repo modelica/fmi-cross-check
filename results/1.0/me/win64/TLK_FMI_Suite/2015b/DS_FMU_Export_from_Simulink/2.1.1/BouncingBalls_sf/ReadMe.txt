@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=BouncingBalls_sf.fmu --Options=BouncingBalls_sf_ref.opt --Reference=BouncingBalls_sf_ref.csv --Output=BouncingBalls_sf_out.csv --FMUType=ME

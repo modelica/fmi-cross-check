@@ -1,0 +1,1 @@
+FMI_Crosscheck_Library_Tester.exe --FMU=TriggeredSubsystems_sf.fmu --Options=TriggeredSubsystems_sf_ref.opt --Reference=TriggeredSubsystems_sf_ref.csv --Output=TriggeredSubsystems_sf_out.csv --FMUType=CS

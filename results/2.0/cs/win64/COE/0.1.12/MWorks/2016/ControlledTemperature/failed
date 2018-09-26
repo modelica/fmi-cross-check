@@ -1,0 +1,17 @@
+ERROR [main] (RequestProcessors.java:273) - Internal error in initialization
+org.intocps.orchestration.coe.AbortSimulationException: 
+Failed to load and parse model defintion in: file:/C:/source/intocps/crosscheck/public/Test_FMUs/FMI_2.0/CoSimulation/win64/MWorks/2016/ControlledTemperature/ControlledTemperature.fmu Reason:  Invalid configuration of scalar variables: 
+logicalNot.y Error: For a continuous variable the type has to be Real
+logicalNot.u Error: For a continuous variable the type has to be Real
+idealSwitch.control Error: For a continuous variable the type has to be Real
+
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.loadFmusFromFiles(CoeInitialize.scala:168)
+	at org.intocps.orchestration.coe.scala.CoeInitialize$.initialize(CoeInitialize.scala:51)
+	at org.intocps.orchestration.coe.scala.Coe.initialize(Coe.scala:104)
+	at org.intocps.orchestration.coe.httpserver.RequestProcessors.processInitialize(RequestProcessors.java:264)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.initialize(RequestHandler.java:316)
+	at org.intocps.orchestration.coe.httpserver.RequestHandler.handleRequest(RequestHandler.java:175)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.callHttpAny(SimulationExecutionUtil.java:133)
+	at org.intocps.orchestration.coe.util.SimulationExecutionUtil.run(SimulationExecutionUtil.java:167)
+	at org.intocps.orchestration.coe.single.SingleSimMain.main(SingleSimMain.java:283)
+
