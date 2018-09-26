@@ -1,0 +1,4 @@
+StepSize,0.01
+StartTime,0
+StopTime,30
+RelTol,1e-7

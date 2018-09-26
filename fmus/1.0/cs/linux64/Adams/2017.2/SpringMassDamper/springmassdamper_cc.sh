@@ -1,0 +1,1 @@
+./fmuCheck.linux64 -e springmassdamper_cc.log -o springmassdamper_cc.csv -n 0 -h 0.01 -s 50 springmassdamper.fmu

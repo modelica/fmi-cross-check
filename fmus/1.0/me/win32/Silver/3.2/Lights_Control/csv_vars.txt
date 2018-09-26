@@ -1,0 +1,4 @@
+headlight
+light_intensity
+light_switch
+light_switch_old

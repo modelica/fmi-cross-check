@@ -1,0 +1,13 @@
+egsCarSpeed
+egsGear
+egsTargetGear
+valves_eds
+valves_eds1
+valves_eds2
+valves_eds3
+valves_eds4
+valves_eds5
+valves_mv1
+valves_mv2
+valves_mv3
+tShiftStart

@@ -1,0 +1,5 @@
+StartTime, 0
+StopTime, 1
+StepSize, 0.0005
+RelTol, 1e-06
+SolverType, euler

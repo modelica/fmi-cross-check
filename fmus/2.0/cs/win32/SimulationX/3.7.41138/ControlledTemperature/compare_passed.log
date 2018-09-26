@@ -1,0 +1,6 @@
+CSV Compare Version 2.0.0.1 (Amd64)
+Comparison result file for C:\temp\FMIcc\FMI_2.0\CoSimulation\win32\SimulationX\3.7\ControlledTemperature\ControlledTemperature_cc.csv
+. Time:        2016-05-13T09:00:19.5296869+02:00
+. Operation:   CsvFileCompare
+. Tolerance:   1e-2
+. Result:      passed

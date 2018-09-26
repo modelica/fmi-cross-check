@@ -1,0 +1,6 @@
+CSV Compare Version 2.0.0.1 (Amd64)
+Comparison result file for C:\temp\FMIcc\FMI_2.0\ModelExchange\win32\SimulationX\3.7\Engine1b\Engine1b_cc.csv
+. Time:        2016-05-13T08:57:14.6871256+02:00
+. Operation:   CsvFileCompare
+. Tolerance:   1e-2
+. Result:      passed

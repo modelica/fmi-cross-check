@@ -1,0 +1,1 @@
+./fmuCheck.linux64 -e forklift_cc.log -o forklift_cc.csv -i forklift_in.csv -n 0 -h 0.001 -s 10 forklift.fmu
