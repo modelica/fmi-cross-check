@@ -24,6 +24,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
+            git clone https://github.com/modelica/fmi-standard.org.git
 
       - save_cache:
           paths:
@@ -36,7 +37,8 @@ jobs:
           command: |
             . venv/bin/activate
             python -m fmpy.cross_check.validate_vendor_repo
+            python -m fmpy.cross_check.result_tables . fmi-standard.org/_data
 
       - store_artifacts:
-          path: test-reports
-          destination: test-reports
+          path: fmi-standard.org/_data
+          destination: result-tables
