@@ -1,7 +1,14 @@
 # FMI Cross-Check
 
+[![CircleCI](https://circleci.com/gh/modelica/fmi-cross-check/tree/master.svg?style=svg)](https://circleci.com/gh/modelica/fmi-cross-check/tree/master)
+
 This repository contains the exported FMUs and results for imported FMUs of the tools that take part in the FMI Cross-Check.
 If your tool is listed on [fmi-standard.org/tools/](https://fmi-standard.org/tools/) you can add your FMUs and results by following the steps below.
+
+## Fork and clone the repository
+
+[Fork and clone](https://help.github.com/articles/fork-a-repo/) the [fmi-cross-check repository](https://github.com/modelica/fmi-cross-check).
+Create and checkout a new branch `add-Tool_ID-Tool_Version` where `Tool_ID` is a tool ID from [tools.csv](https://github.com/modelica/fmi-standard.org/blob/master/_data/tools.csv) and `Version` the tool's version for which you commit FMUs / results.
 
 ## Add FMUs
 
@@ -78,6 +85,6 @@ cd FMPy
 python -m fmpy.cross_check.validate_vendor_repo /path/to/fmi-cross-check
 ```
 
-## Make a pull-request
+## Make a pull request
 
-Fork the repository, commit your files to a new branch `add-Tool_ID-Tool_Version` and open a pull-request.
+Commit and push the changes to your fork and [create a pull request](https://help.github.com/articles/creating-a-pull-request/).
