@@ -1,1 +1,4 @@
-https://github.com/CATIA-Systems/FMPy/archive/feature/fmi-xc.zip
+lxml
+numpy
+pathlib
+scipy
