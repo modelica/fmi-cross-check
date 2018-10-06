@@ -1,1 +1,0 @@
-FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win64\OpenModelica\v1.11.0\WaterTank_Control\WaterTank_Control.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win64\OpenModelica\v1.11.0\WaterTank_Control\run\" -t 1 -s 0.0005 -ov level

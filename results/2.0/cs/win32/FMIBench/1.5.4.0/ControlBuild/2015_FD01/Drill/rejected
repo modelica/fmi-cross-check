@@ -1,3 +1,0 @@
-The reference values diverge from the fixed start values at time 0,
-as well as from the FMUChecker results, so that we must assume a
-problem in the reference values.

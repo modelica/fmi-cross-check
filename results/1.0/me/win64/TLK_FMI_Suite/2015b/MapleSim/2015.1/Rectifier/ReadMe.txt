@@ -1,1 +1,0 @@
-FMI_Crosscheck_Library_Tester.exe --FMU=Rectifier.fmu --Options=Rectifier_ref.opt --Reference=Rectifier_ref.csv --Output=Rectifier_out.csv --FMUType=ME

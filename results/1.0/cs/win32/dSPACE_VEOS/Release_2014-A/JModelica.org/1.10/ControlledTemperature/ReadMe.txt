@@ -1,1 +1,0 @@
-Results created with dSPACE VEOS by using the dSPACE FMI Compatibility Adapter and dSPACE ControlDesk Next Generation for experimentation. 

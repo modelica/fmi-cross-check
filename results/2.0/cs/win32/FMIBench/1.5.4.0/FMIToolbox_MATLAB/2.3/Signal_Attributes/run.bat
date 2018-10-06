@@ -1,1 +1,0 @@
-FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\FMIToolbox_MATLAB\2.3\Signal_Attributes\Signal_Attributes.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\FMIToolbox_MATLAB\2.3\Signal_Attributes\run\" -t 10.000000 -s 0.010000

@@ -1,1 +1,0 @@
-FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\Silver\3.2\Lights_Control\lights_control.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\Silver\3.2\Lights_Control\run\" -t 7 -s 0.01

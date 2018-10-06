@@ -1,1 +1,0 @@
-FMI_Crosscheck_Library_Tester.exe --FMU=compute.fmu --Options=compute_ref.opt --Reference=compute_ref.csv --Output=compute_out.csv --FMUType=CS
