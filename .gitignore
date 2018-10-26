@@ -5,12 +5,12 @@
 !*/
 
 # FMUs
-!fmus/*/*/*/*/*/*/*/*/*.fmu
-!fmus/*/*/*/*/*/*/*/*/*_in.csv
-!fmus/*/*/*/*/*/*/*/*/*_ref.csv
-!fmus/*/*/*/*/*/*/*/*/*_ref.opt
-!fmus/*/*/*/*/*/*/*/*/README.md
-!fmus/*/*/*/*/*/*/*/*/README.txt
+!fmus/*/*/*/*/*/*/*.fmu
+!fmus/*/*/*/*/*/*/*_in.csv
+!fmus/*/*/*/*/*/*/*_ref.csv
+!fmus/*/*/*/*/*/*/*_ref.opt
+!fmus/*/*/*/*/*/*/README.md
+!fmus/*/*/*/*/*/*/README.txt
 
 # results
 !results/*/*/*/*/*/*/*/*/*_out.csv
