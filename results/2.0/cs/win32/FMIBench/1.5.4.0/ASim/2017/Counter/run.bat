@@ -1,1 +1,0 @@
-FMIBench.exe --run-script quickrun-fmu-simulation.fbs "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\ASim\2017\Counter\Counter.fmu" "C:\Users\pmai\src\FMIBench\testing\crosscheck\Test_FMUs\FMI_2.0\CoSimulation\win32\ASim\2017\Counter\run\" -t 50 -s 1
