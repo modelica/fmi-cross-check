@@ -1,4 +1,4 @@
-"time","outputs1","outputs2","outputs3","outputs4"
+"time","outputs[1]","outputs[2]","outputs[3]","outputs[4]"
 0,10,0,0,0
 0.001,9.99,0.01,0,0
 0.002,9.98031,0.02,0,0
