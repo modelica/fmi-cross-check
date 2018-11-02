@@ -1,0 +1,8 @@
+[ERROR][FMI1XML] Detected on line:408 of modelDescription.xml
+[ERROR][FMI1XML] Found capability flag canSignalEvents which have been deprecated as it fills no function
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	Warnings were ignored (log level: ERROR)
+	2 Error(s)
