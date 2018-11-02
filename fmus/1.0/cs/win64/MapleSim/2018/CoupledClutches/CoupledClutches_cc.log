@@ -1,0 +1,43 @@
+[INFO][FMUCHK] FMI compliance checker 2.0.4 [FMILibrary: 2.0.3] build date: Nov  6 2017
+[INFO][FMUCHK] Called with following options:
+[INFO][FMUCHK] Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\bin.X86_64_WINDOWS\FMUChecker-2.0.4\fmuCheck.win64.exe -i Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\data\CoupledClutches_in.csv -e Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\temp\win64_ICW8KHPC01\CoupledClutches_CS_cc.log -o Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\temp\win64_ICW8KHPC01\CoupledClutches_CS_cc.csv -n 151 -s 1.5 -h 1e-2 -t C:/temp/tester0/tester.39612/PoG2axTK/ C:/temp/tester0/tester.39612/PoG2axTK/\CoupledClutches.fmu
+[INFO][FMUCHK] Will process FMU C:/temp/tester0/tester.39612/PoG2axTK/\CoupledClutches.fmu
+[INFO][FMILIB] XML specifies FMI standard version 1.0
+[INFO][FMI1XML] Processing implementation element (co-simulation FMU detected)
+[ERROR][FMI1XML] Detected on line:975 of modelDescription.xml
+[ERROR][FMI1XML] Found capability flag canSignalEvents which have been deprecated as it fills no function
+[INFO][FMUCHK] Model name: CoupledClutches
+[INFO][FMUCHK] Model identifier: CoupledClutches
+[INFO][FMUCHK] Model GUID: {31a35a11-6d54-5f7e-0538-0e4bfa13f991}
+[INFO][FMUCHK] Model version: 
+[INFO][FMUCHK] FMU kind: CoSimulation_StandAlone
+[INFO][FMUCHK] The FMU contains:
+0 constants
+2 parameters
+0 discrete variables
+152 continuous variables
+1 inputs
+4 outputs
+149 internal variables
+0 variables with causality 'none'
+154 real variables
+0 integer variables
+0 enumeration variables
+0 boolean variables
+0 string variables
+
+[INFO][FMUCHK] Printing output file header
+[INFO][FMUCHK] Opening input file Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\data\CoupledClutches_in.csv
+[INFO][FMUCHK] Detected separator character in input file: ,
+[INFO][FMILIB] Loading 'win64' binary with 'standard32' platform types
+[INFO][FMUCHK] Version returned from FMU:   1.0
+[INFO][FMUCHK] Checking that FMI set functions can be called with zero length arrays
+[INFO][FMUCHK] Initialized FMU for simulation starting at time 0
+[INFO][FMUCHK] Checking that FMI get functions can be called with zero length arrays
+[INFO][FMUCHK] Simulation finished successfully at time 1.5
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	0 Warning(s)
+	2 Error(s)

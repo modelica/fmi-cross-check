@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fmiModelDescription
+  fmiVersion               = "2.0"
+  modelName                = "ControlledTemperature"
+  guid                     = "{8ec56dd1-d122-d257-d06e-b61ea50badbc}"
+  description              = "Model ControlledTemperature"
+  author                   = ""
+  version                  = ""
+  copyright                = ""
+  license                  = ""
+  generationTool           = "MapleSim (1357016/1357197/1357197)"
+  generationDateAndTime    = "2018-10-25T13:24:11Z"
+  variableNamingConvention = "structured"
+  numberOfEventIndicators  = "5">
+
+  <ModelExchange
+    modelIdentifier               = "ControlledTemperature"
+    canGetAndSetFMUstate          = "true"
+    canSerializeFMUstate          = "true"
+    providesDirectionalDerivative = "true">
+  </ModelExchange>
+
+  <UnitDefinitions>
+    <Unit name =  "K" />
+    <Unit name =  "degC" />
+    <Unit name =  "s" />
+  </UnitDefinitions>
+
+  <DefaultExperiment
+    startTime = "0.00000000000000000e+00"
+    stopTime  = "1.00000000000000000e+01"
+    tolerance = "0.0001"/>
+
+  <ModelVariables>
+    <ScalarVariable
+      name           = "internalTime"
+      valueReference = "0"
+      description    = "internal time"
+      causality      = "independent" >
+      <Real 
+        unit     = "s"/>
+    </ScalarVariable>   <!--index="1" -->
+    <ScalarVariable
+      name           = "TAmb"
+      valueReference = "15"
+      description    = "Ambient Temperature"
+      causality      = "parameter"
+      variability    = "fixed" >
+      <Real 
+        unit     = "K"
+        start    = "2.93150000000000000e+02"/>
+    </ScalarVariable>   <!--index="2" -->
+    <ScalarVariable
+      name           = "TDif"
+      valueReference = "16"
+      description    = "Error in Temperature"
+      causality      = "parameter"
+      variability    = "fixed" >
+      <Real 
+        unit     = "K"
+        start    = "2.00000000000000000e+00"/>
+    </ScalarVariable>   <!--index="3" -->
+    <ScalarVariable
+      name           = "outputs[1]"
+      valueReference = "2"
+      description    = "onOffController.reference"
+      initial        = "calculated"
+      causality      = "output" >
+      <Real />
+    </ScalarVariable>   <!--index="4" -->
+    <ScalarVariable
+      name           = "outputs[2]"
+      valueReference = "7"
+      description    = "TempInput.value"
+      initial        = "calculated"
+      causality      = "output" >
+      <Real 
+        unit     = "degC"/>
+    </ScalarVariable>   <!--index="5" -->
+    <ScalarVariable
+      name           = "heatCapacitor.T"
+      valueReference = "1"
+      description    = "heatCapacitor.T"
+      initial        = "exact" >
+      <Real 
+        start    = "2.93149999999999980e+02"/>
+    </ScalarVariable>   <!--index="6" -->
+    <ScalarVariable
+      name           = "heatingResistor.heatPort.Q_flow"
+      valueReference = "3"
+      description    = "heatingResistor.heatPort.Q_flow"
+      initial        = "calculated" >
+      <Real />
+    </ScalarVariable>   <!--index="7" -->
+    <ScalarVariable
+      name           = "idealSwitch.p.i"
+      valueReference = "4"
+      description    = "idealSwitch.p.i"
+      initial        = "calculated" >
+      <Real />
+    </ScalarVariable>   <!--index="8" -->
+    <ScalarVariable
+      name           = "idealSwitch.s"
+      valueReference = "5"
+      description    = "idealSwitch.s"
+      initial        = "calculated" >
+      <Real />
+    </ScalarVariable>   <!--index="9" -->
+    <ScalarVariable
+      name           = "idealSwitch.v"
+      valueReference = "6"
+      description    = "idealSwitch.v"
+      initial        = "calculated" >
+      <Real />
+    </ScalarVariable>   <!--index="10" -->
+    <ScalarVariable
+      name           = "onOffController.y"
+      valueReference = "8"
+      description    = "onOffController.y"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="11" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_9"
+      valueReference = "9"
+      description    = "_msim_terminate"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="12" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_10"
+      valueReference = "10"
+      description    = "msim_RVAR1"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="13" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_11"
+      valueReference = "11"
+      description    = "msim_RVAR2"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="14" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_12"
+      valueReference = "12"
+      description    = "msim_RVAR3"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="15" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_13"
+      valueReference = "13"
+      description    = "msim_RVAR4"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="16" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_14"
+      valueReference = "14"
+      description    = "msim_RVAR5"
+      variability    = "discrete" >
+      <Real />
+    </ScalarVariable>   <!--index="17" -->
+    <ScalarVariable
+      name           = "heatCapacitor.T.der"
+      valueReference = "17"
+      description    = "der(heatCapacitor.T)" >
+      <Real 
+        derivative = "6"/>
+    </ScalarVariable>   <!--index="18" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_18"
+      valueReference = "18"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="19" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_19"
+      valueReference = "19"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="20" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_20"
+      valueReference = "20"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="21" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_21"
+      valueReference = "21"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="22" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_22"
+      valueReference = "22"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="23" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_23"
+      valueReference = "23"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="24" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_24"
+      valueReference = "24"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="25" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_25"
+      valueReference = "25"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="26" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_26"
+      valueReference = "26"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="27" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_27"
+      valueReference = "27"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="28" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_28"
+      valueReference = "28"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="29" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_29"
+      valueReference = "29"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="30" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_30"
+      valueReference = "30"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="31" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_31"
+      valueReference = "31"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="32" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_32"
+      valueReference = "32"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="33" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_33"
+      valueReference = "33"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="34" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_34"
+      valueReference = "34"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="35" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_35"
+      valueReference = "35"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="36" -->
+    <ScalarVariable
+      name           = "ControlledTemperature_r_36"
+      valueReference = "36"
+      description    = "internal variable" >
+      <Real />
+    </ScalarVariable>   <!--index="37" -->
+    <ScalarVariable
+      name           = "minsamplestep"
+      valueReference = "37"
+      description    = "Minimum time step between samples in binary data file"
+      causality      = "parameter"
+      variability    = "fixed" >
+      <Real 
+        unit     = "s"
+        start    = "2.50000000000000000e-02"/>
+    </ScalarVariable>   <!--index="38" -->
+    <ScalarVariable
+      name           = "binfilename"
+      valueReference = "38"
+      description    = "Name of binary data file"
+      causality      = "parameter"
+      variability    = "fixed" >
+      <String 
+        start    = "DISABLED"/>
+    </ScalarVariable>   <!--index="39" -->
+  </ModelVariables>
+
+  <ModelStructure>
+    <Outputs>
+      <Unknown index = "4" dependencies = "1" />
+      <Unknown index = "5" dependencies = "6" />
+    </Outputs>
+    <Derivatives>
+      <Unknown index = "18" dependencies = "6" />
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index = "4" dependencies = "1" />
+      <Unknown index = "5" dependencies = "6" />
+      <Unknown index = "18" dependencies = "6" />
+    </InitialUnknowns>
+  </ModelStructure>
+
+</fmiModelDescription>

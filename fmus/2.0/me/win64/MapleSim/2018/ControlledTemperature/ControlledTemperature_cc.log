@@ -1,0 +1,38 @@
+[INFO][FMUCHK] FMI compliance checker 2.0.4 [FMILibrary: 2.0.3] build date: Nov  6 2017
+[INFO][FMUCHK] Called with following options:
+[INFO][FMUCHK] Z:/maple2018_2/2018-10-25/1357197\toolbox_source\FMIConnector\bin.X86_64_WINDOWS\FMUChecker-2.0.4\fmuCheck.win64.exe -e Z:/maple2018_2/2018-10-25/1357197\toolbox_source\FMIConnector\maple\tst\temp\win64\ControlledTemperature_ME_cc.log -o Z:/maple2018_2/2018-10-25/1357197\toolbox_source\FMIConnector\maple\tst\temp\win64\ControlledTemperature_ME_cc.csv -n 500 -s 10 -h 1e-3 -t C:/temp/tester2/tester.19468/4jOjcN14/ C:/temp/tester2/tester.19468/4jOjcN14/\ControlledTemperature.fmu
+[INFO][FMUCHK] Will process FMU C:/temp/tester2/tester.19468/4jOjcN14/\ControlledTemperature.fmu
+[INFO][FMILIB] XML specifies FMI standard version 2.0
+[INFO][FMUCHK] Model name: ControlledTemperature
+[INFO][FMUCHK] Model GUID: {583a2591-6be4-b65c-ae04-023708bfee84}
+[INFO][FMUCHK] Model version: 
+[INFO][FMUCHK] FMU kind: ModelExchange
+[INFO][FMUCHK] The FMU contains:
+0 constants
+4 parameters
+7 discrete variables
+28 continuous variables
+0 inputs
+2 outputs
+33 local variables
+0 independent variables
+0 calculated parameters
+38 real variables
+0 integer variables
+0 enumeration variables
+0 boolean variables
+1 string variables
+
+[INFO][FMUCHK] Printing output file header
+[INFO][FMUCHK] Model identifier for ModelExchange: ControlledTemperature
+[INFO][FMILIB] Loading 'win64' binary with 'default' platform types
+[INFO][FMUCHK] Version returned from ME FMU: '2.0'
+
+[INFO][FMUCHK] Initialized FMU for simulation starting at time 0
+[INFO][FMUCHK] Simulation finished successfully at time 10
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	0 Warning(s)
+	0 Error(s)
