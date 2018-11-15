@@ -45,6 +45,8 @@ jobs:
           name: push results
           command: |
             if [ $CIRCLE_BRANCH = "master" ]; then
+              git config --global user.email "circleci@fmi-standard"
+              git config --global user.name "Circle CI"
               cd ~/repo/fmi-standard.org
               git add -u _data/cross-check/*.csv
               git commit -m "Adding cross-check results from CI (build $CIRCLE_BUILD_NUM)"
