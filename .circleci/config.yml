@@ -23,7 +23,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-            git clone https://github.com/modelica/fmi-standard.org.git
+            git clone git@github.com:modelica/fmi-standard.org.git
             git clone https://github.com/CATIA-Systems/FMPy.git --branch feature/fmi-xc
 
       - save_cache:
