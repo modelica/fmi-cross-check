@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
+      # download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "requirements.txt" }}
@@ -31,14 +31,25 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
-      # run tests!
+      # validate data
       - run:
-          name: run tests
+          name: validate data
           command: |
             . venv/bin/activate
             cd ~/repo/FMPy
             python -m fmpy.cross_check.validate_vendor_repo ~/repo
             python -m fmpy.cross_check.result_tables ~/repo ~/repo/fmi-standard.org/_data
+
+      # push results to fmi-standard.org
+      - run:
+          name: push results
+          command: |
+            if [ $CIRCLE_BRANCH = "master" ]; then
+              cd ~/repo/fmi-standard.org
+              git add -u _data/cross-check/*.csv
+              git commit -m "Adding cross-check results from CI (build $CIRCLE_BUILD_NUM)"
+              git push
+            fi
 
       - store_artifacts:
           path: fmi-standard.org/_data
