@@ -1,1 +1,1 @@
-fmuCheck.win32.exe -l 3 -e Rectifier_CS_cc.log -o Rectifier_CS_cc.csv -c , -s 0.1 -h 1e-7 Rectifier.fmu
+fmuCheck.win32.exe -l 3 -e Rectifier_cc.log -o Rectifier_cc.csv -c , -s 0.1 -h 1e-7 Rectifier.fmu
