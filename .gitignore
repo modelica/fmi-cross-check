@@ -1,7 +1,7 @@
 *
 !.gitignore
 !.circleci/
-!README.md
+!*.md
 !*/
 
 # FMUs
