@@ -1,0 +1,3 @@
+Program error: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `no.mechatronics.sfi.fmi4j.modeldescription.structure.ModelStructureImpl` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('
+  ')
+ at [Source: (StringReader); line: 59, column: 3] (through reference chain: no.mechatronics.sfi.fmi4j.modeldescription.ModelDescriptionImpl["ModelStructure"])
