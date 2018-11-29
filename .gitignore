@@ -11,6 +11,7 @@
 !fmus/*/*/*/*/*/*/*_ref.opt
 !fmus/*/*/*/*/*/*/README.md
 !fmus/*/*/*/*/*/*/README.txt
+!fmus/*/*/*/*/*/*/notCompliantWithLatestRules
 
 # results
 !results/*/*/*/*/*/*/*/*/*_out.csv
