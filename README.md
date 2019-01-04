@@ -4,6 +4,7 @@
 
 This repository contains the exported FMUs and results for imported FMUs of the tools that take part in the FMI Cross-Check.
 If your tool is listed on [fmi-standard.org/tools/](https://fmi-standard.org/tools/) you can add your FMUs and results by following the steps below.
+For details see the official [FMI Cross-Check rules](FMI-CROSS-CHECK-RULES.md).
 
 ## Fork and clone the repository
 
@@ -24,8 +25,8 @@ fmus
             + Model_Name
               - Model_Name_in.csv  (optional)
               - Model_Name_ref.csv
-              - Mode_lName_ref.opt
-              - Mode_lName.fmu
+              - Model_Name_ref.opt
+              - Model_Name.fmu
               - README.[md|txt]
 ```
 
@@ -40,8 +41,7 @@ fmus
 | Model_Name_in.csv  | Input file (optional)
 | Model_Name_ref.csv | Reference results
 | Model_Name_ref.opt | Simulation settings to reproduce reference results
-| Mode_lName.fmu     | The exported FMU
-| Mode_lName.fmu     | The exported FMU
+| Model_Name.fmu     | The exported FMU
 | README.txt         | A text (`.txt`) or Markdown (`.md`) file that describes the FMU (optional)
 
 ## Add results

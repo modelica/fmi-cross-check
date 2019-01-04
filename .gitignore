@@ -1,16 +1,17 @@
 *
 !.gitignore
 !.circleci/
-!README.md
+!*.md
 !*/
 
 # FMUs
-!fmus/*/*/*/*/*/*/*/*/*.fmu
-!fmus/*/*/*/*/*/*/*/*/*_in.csv
-!fmus/*/*/*/*/*/*/*/*/*_ref.csv
-!fmus/*/*/*/*/*/*/*/*/*_ref.opt
-!fmus/*/*/*/*/*/*/*/*/README.md
-!fmus/*/*/*/*/*/*/*/*/README.txt
+!fmus/*/*/*/*/*/*/*.fmu
+!fmus/*/*/*/*/*/*/*_in.csv
+!fmus/*/*/*/*/*/*/*_ref.csv
+!fmus/*/*/*/*/*/*/*_ref.opt
+!fmus/*/*/*/*/*/*/README.md
+!fmus/*/*/*/*/*/*/README.txt
+!fmus/*/*/*/*/*/*/notCompliantWithLatestRules
 
 # results
 !results/*/*/*/*/*/*/*/*/*_out.csv
