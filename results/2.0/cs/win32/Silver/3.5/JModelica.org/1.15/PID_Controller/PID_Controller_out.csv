@@ -1,8 +1,12 @@
     "time","driveAngle","spring.w_rel",  "PI.I.y","inertia1.phi","spring.phi_rel","integrator.y","inertia1.w"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Re-commit results with less time and stop_time.
+=======
+<<<<<<< HEAD
+>>>>>>> Added FMI X-check results for QTronic Silver 3.5.20
          0,      1.57,         0,      -0.1,         0,     0.001,         0,         0
       0.01,      1.57,         0,      -0.1,         0,     0.001,         0,         0
       0.02,      1.57,         0,      -0.1,         0,     0.001,         0,         0
@@ -405,9 +409,15 @@
       3.99,      1.57,         0,      -0.1,         0,     0.001,         0,         0
          4,      1.57,         0,      -0.1,         0,     0.001,         0,         0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Added FMI X-check results for QTronic Silver 3.5.20
 =======
          0,         0,         0,      -0.1,         0,     0.001,         0,         0
          4,         0,         0,      -0.1,         0,     0.001,         0,         0
 >>>>>>> Added FMI X-check results for QTronic Silver 3.5.20
+<<<<<<< HEAD
 =======
 >>>>>>> Re-commit results with less time and stop_time.
+=======
+>>>>>>> Added FMI X-check results for QTronic Silver 3.5.20
