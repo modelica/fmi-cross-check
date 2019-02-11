@@ -1,6 +1,9 @@
     "time", "counter"
          0,         1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Re-commit results with less time and stop_time.
       0.05,         1
        0.1,         1
       0.15,         1
@@ -240,6 +243,7 @@
      11.85,        12
       11.9,        12
      11.95,        12
+<<<<<<< HEAD
 =======
        0.5,         1
          1,         2
@@ -264,4 +268,6 @@
       10.5,        11
         11,        12
 >>>>>>> Added FMI X-check results for QTronic Silver 3.5.20
+=======
+>>>>>>> Re-commit results with less time and stop_time.
         12,        12
