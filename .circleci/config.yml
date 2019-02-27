@@ -50,9 +50,9 @@ jobs:
               git config --global user.name "Circle CI"
               cd ~/repo/fmi-standard.org
               git add -u _data/cross-check/*.csv
+              git commit -m "Adding cross-check results from CI (build $CIRCLE_BUILD_NUM)"
               status=$?
               if [ "$status" -eq 0 ]; then
-                git commit -m "Adding cross-check results from CI (build $CIRCLE_BUILD_NUM)"
                 git push
               fi
             fi
