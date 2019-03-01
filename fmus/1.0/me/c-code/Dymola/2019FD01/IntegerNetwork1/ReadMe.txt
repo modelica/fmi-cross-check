@@ -3,7 +3,7 @@ Model:
       IntegerNetwork1
       
       FMI Type:
-      me
+      ModelExchange
       
       Generation Tool:
       Dymola 2019FD01
@@ -19,5 +19,8 @@ Model:
         
       FMUChecker:
       FMUChecker Version 2.0.2b3 
-           
+      
+   /*   run command:
+       */
+      
       Contact info: karl.wernersson@3ds.com
