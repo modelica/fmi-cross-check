@@ -2,3 +2,4 @@ lxml
 numpy
 pathlib
 scipy
+fmpy==0.2.10
