@@ -77,12 +77,19 @@ results
 
 ## Validate the files
 
-`EXPERIMENTAL` Clone the FMPy repository and run the validation
+Before pushing your changes to GitHub please validate the repository and fix any reported problems. To run the validation locally, install [FMPy 0.2.10](https://github.com/CATIA-Systems/FMPy#installation), change into the cloned `fmi-cross-check` repository and run
 
 ```
-git clone https://github.com/CATIA-Systems/FMPy.git --branch feature/fmi-xc
-cd FMPy
-python -m fmpy.cross_check.validate_vendor_repo /path/to/fmi-cross-check
+python -m fmpy.cross_check.validate_vendor_repo
+```
+
+The script will report all problems that have been found:
+
+```
+#################################
+0 problems found in /path/to/fmi-cross-check
+Validated 1233 FMUs and 10008 results
+#################################
 ```
 
 ## Make a pull request
