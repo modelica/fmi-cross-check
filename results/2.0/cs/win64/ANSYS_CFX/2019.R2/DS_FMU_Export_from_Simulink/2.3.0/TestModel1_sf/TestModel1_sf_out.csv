@@ -1,4 +1,4 @@
-TIME,Noise,Noise_Filt,Noise_Filt_Sat,Sine,Sine_Filt,Sine_Filt_Quantized
+"time","Noise","Noise_Filt","Noise_Filt_Sat","Sine","Sine_Filt","Sine_Filt_Quantized"
 0,0.50419,0.063024,0.063024,0,0,0
 0.001,0.504193425,0.063024178,0.063024178,0.002,0,0
 0.002,0.504193425,0.063024178,0.063024178,0.003999997,0,0
