@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Fixed troublesome results.
+=======
+>>>>>>> Add Silver 4.0 results (#56)
     "time","outputs[1]","outputs[2]"
          0,        25,        20
       0.03,        25, 20.299353
@@ -338,6 +341,7 @@
       9.96,        50, 49.024772
       9.99,        50, 49.206661
         10,        50, 49.387852
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     "time","outputs[1]","outputs[2]"
@@ -678,3 +682,5 @@
 >>>>>>> Silver 4.0 results.
 =======
 >>>>>>> Fixed troublesome results.
+=======
+>>>>>>> Add Silver 4.0 results (#56)
