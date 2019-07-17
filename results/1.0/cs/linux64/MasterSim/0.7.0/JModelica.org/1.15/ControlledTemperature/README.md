@@ -4,6 +4,9 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
+WRMS(TAmb) = 0.0
+WRMS(TDif) = 0.0
+WRMS(heatCapacitor.T) = 0.00847533187344
 WRMS(TRes) = 0.00847533187344
 
 ## MasterSim project file
@@ -13,7 +16,7 @@ Mind: project file is copied from working directory, hence relative path to fmu 
 
 ```
 # Created:	Mi. Juli 17 20:28:36 2019
-# LastModified:	Mi. Juli 17 20:28:36 2019
+# LastModified:	Mi. Juli 17 20:58:32 2019
 
 tStart                   0 s
 tEnd                     10 s
@@ -28,7 +31,7 @@ relTol                   0.0001
 MasterMode               GAUSS_JACOBI
 ErrorControlMode         NONE
 maxIterations            1
-writeInternalVariables   no
+writeInternalVariables   yes
 
 simulator 0 0 slave1 #ffff8c00 "../../fmi-cross-check/fmus/1.0/cs/linux64/JModelica.org/1.15/ControlledTemperature/ControlledTemperature.fmu"
 
