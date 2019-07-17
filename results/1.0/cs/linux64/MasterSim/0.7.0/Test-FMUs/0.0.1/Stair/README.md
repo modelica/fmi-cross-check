@@ -13,7 +13,7 @@ Mind: project file is copied from working directory, hence relative path to fmu 
 
 ```
 # Created:	Mi. Juli 17 07:28:07 2019
-# LastModified:	Mi. Juli 17 07:28:07 2019
+# LastModified:	Mi. Juli 17 19:56:18 2019
 
 tStart                   0 s
 tEnd                     10 s
@@ -21,7 +21,7 @@ hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
 hStart                   0.001 s
-hOutputMin               0.001 s
+hOutputMin               0.0001 s
 adjustStepSize           no
 absTol                   1e-06
 relTol                   1e-05

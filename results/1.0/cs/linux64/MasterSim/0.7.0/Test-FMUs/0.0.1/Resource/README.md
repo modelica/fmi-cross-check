@@ -12,20 +12,23 @@ Below is the project file that was used to successfully simulation the test case
 Mind: project file is copied from working directory, hence relative path to fmu file.
 
 ```
+# Created:	Mi. Juli 17 19:55:48 2019
+# LastModified:	Mi. Juli 17 19:56:03 2019
 
-tStart               0.000000e+00 s
-tEnd                 1.000000e+00 s
-hMax                 30 min
-hMin                 1e-6 s
-hFallBackLimit       0.001 s
-hStart               0.000000e+00 s
-hOutputMin           2.000000e-03 s
-adjustStepSize       no
-absTol               1e-06
-relTol               1.000000e-05
-MasterMode           GAUSS_JACOBI
-ErrorControlMode     NONE
-maxIterations        1
+tStart                   0 s
+tEnd                     1 s
+hMax                     30 min
+hMin                     1e-06 s
+hFallBackLimit           0.001 s
+hStart                   0 s
+hOutputMin               0.002 s
+adjustStepSize           no
+absTol                   1e-06
+relTol                   1e-05
+MasterMode               GAUSS_JACOBI
+ErrorControlMode         NONE
+maxIterations            1
+writeInternalVariables   no
 
 simulator 0 0 slave1 #ffff8c00 "../../fmi-cross-check/fmus/1.0/cs/linux64/Test-FMUs/0.0.1/Resource/Resource.fmu"
 
