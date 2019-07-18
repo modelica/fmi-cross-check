@@ -77,7 +77,7 @@ results
 
 ## Validate the files
 
-Before pushing your changes to GitHub please validate the repository and fix any reported problems. To run the validation locally, install [FMPy 0.2.10](https://github.com/CATIA-Systems/FMPy#installation), change into the cloned `fmi-cross-check` repository and run
+Before pushing your changes to GitHub please validate the repository and fix any reported problems. To run the validation locally, install [FMPy 0.2.11](https://github.com/CATIA-Systems/FMPy#installation), change into the cloned `fmi-cross-check` repository and run
 
 ```
 python -m fmpy.cross_check.validate_vendor_repo
