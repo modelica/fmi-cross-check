@@ -4,9 +4,11 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
+```
 WRMS(tankLevel) = 1.0282400453
 WRMS(tankLevel2) = 1.67241628274
 WRMS(tankLevel3) = 0.542284483792
+```
 
 ## MasterSim project file
 

@@ -4,10 +4,12 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
-WRMS(axlePosition) = 51.1924058883
-WRMS(speedVal2) = 56.1976701074
-WRMS(RUN1_rotation) = 144.03780045
-WRMS(RUN1_cycleEnd) = 144.037800479
+```
+WRMS(axlePosition) = 45.5878371358
+WRMS(speedVal2) = 50.1862644675
+WRMS(RUN1_rotation) = 113.871879668
+WRMS(RUN1_cycleEnd) = 138.531120581
+```
 
 ## MasterSim project file
 
@@ -16,7 +18,7 @@ Mind: project file is copied from working directory, hence relative path to fmu 
 
 ```
 # Created:	Do. Juli 18 13:33:46 2019
-# LastModified:	Do. Juli 18 13:33:46 2019
+# LastModified:	Do. Juli 18 14:13:04 2019
 
 tStart                   0 s
 tEnd                     12.081 s
@@ -24,7 +26,7 @@ hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
 hStart                   0.001 s
-hOutputMin               0.001 s
+hOutputMin               0.02 s
 adjustStepSize           no
 absTol                   1e-06
 relTol                   0.001
