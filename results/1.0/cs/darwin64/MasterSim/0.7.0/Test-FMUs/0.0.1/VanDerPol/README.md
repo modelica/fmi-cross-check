@@ -4,8 +4,8 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
-WRMS(x0) = 0.38119007273756095
-WRMS(x1) = 0.3701053098017956
+WRMS(x0) = 0.381200865105
+WRMS(x1) = 0.37011006279
 
 ## MasterSim project file
 
@@ -13,8 +13,8 @@ Below is the project file that was used to successfully simulation the test case
 Mind: project file is copied from working directory, hence relative path to fmu file.
 
 ```
-# Created:	Mi. Juli 17 11:05:59 2019
-# LastModified:	Mi. Juli 17 11:05:59 2019
+# Created:	Mi. Juli 17 07:29:11 2019
+# LastModified:	Mi. Juli 17 19:53:13 2019
 
 tStart                   0 s
 tEnd                     20 s
@@ -32,7 +32,5 @@ maxIterations            1
 writeInternalVariables   no
 
 simulator 0 0 slave1 #ffff8c00 "../../fmi-cross-check/fmus/1.0/cs/darwin64/Test-FMUs/0.0.1/VanDerPol/VanDerPol.fmu"
-
-
 ```
 
