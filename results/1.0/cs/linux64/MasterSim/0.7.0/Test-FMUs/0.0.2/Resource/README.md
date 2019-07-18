@@ -22,8 +22,8 @@ tEnd                     1 s
 hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
-hStart                   0 s
-hOutputMin               0.1 s
+hStart                   0.02 s
+hOutputMin               0.2 s
 adjustStepSize           no
 absTol                   1e-06
 relTol                   1e-05
