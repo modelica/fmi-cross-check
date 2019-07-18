@@ -12,15 +12,15 @@ Below is the project file that was used to successfully simulation the test case
 Mind: project file is copied from working directory, hence relative path to fmu file.
 
 ```
-# Created:	Mi. Juli 17 11:05:40 2019
-# LastModified:	Mi. Juli 17 11:05:40 2019
+# Created:	Mi. Juli 17 19:55:48 2019
+# LastModified:	Mi. Juli 17 19:56:03 2019
 
 tStart                   0 s
 tEnd                     1 s
 hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
-hStart                   0.1 s
+hStart                   0 s
 hOutputMin               0.002 s
 adjustStepSize           no
 absTol                   1e-06

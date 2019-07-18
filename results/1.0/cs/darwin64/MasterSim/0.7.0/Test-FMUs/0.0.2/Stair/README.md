@@ -4,7 +4,7 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
-WRMS(counter) = 42.6426211203
+WRMS(counter) = 41.1271517838
 
 ## MasterSim project file
 
@@ -30,8 +30,6 @@ ErrorControlMode         NONE
 maxIterations            1
 writeInternalVariables   no
 
-simulator 0 0 slave1 #ffff8c00 "../../fmi-cross-check/fmus/1.0/cs/linux64/Test-FMUs/0.0.1/Stair/Stair.fmu"
-
-
+simulator 0 0 slave1 #ffff8c00 "../../fmi-cross-check/fmus/1.0/cs/darwin64/Test-FMUs/0.0.2/Stair/Stair.fmu"
 ```
 
