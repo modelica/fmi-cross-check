@@ -92,6 +92,14 @@ Validated 1233 FMUs and 10008 results
 #################################
 ```
 
+*Note:* You may need to run the script once with the optional argument `--clean-up`
+
+```
+python -m fmpy.cross_check.validate_vendor_repo --clean-up
+```
+
+in order to force it to go through all directories again. Otherwise it may claim all files to be correct, even though some errors persist.
+
 ## Make a pull request
 
 Commit and push the changes to your fork and [create a pull request](https://help.github.com/articles/creating-a-pull-request/).
