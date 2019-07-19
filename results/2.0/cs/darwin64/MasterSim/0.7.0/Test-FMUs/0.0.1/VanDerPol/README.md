@@ -4,8 +4,10 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
+```
 WRMS(x0) = 0.381200865105
 WRMS(x1) = 0.37011006279
+```
 
 ## MasterSim project file
 
