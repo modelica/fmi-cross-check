@@ -4,10 +4,12 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
+```
 WRMS(TAmb) = 0.0
 WRMS(TDif) = 0.0
-WRMS(heatCapacitor.T) = 0.00847533187344
-WRMS(TRes) = 0.00847533187344
+WRMS(heatCapacitor.T) = 0.00847533187338
+WRMS(TRes) = 0.00847533187338
+```
 
 ## MasterSim project file
 
@@ -24,7 +26,7 @@ hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
 hStart                   0.0001 s
-hOutputMin               0.001 s
+hOutputMin               0.01 s
 adjustStepSize           no
 absTol                   1e-06
 relTol                   0.0001
