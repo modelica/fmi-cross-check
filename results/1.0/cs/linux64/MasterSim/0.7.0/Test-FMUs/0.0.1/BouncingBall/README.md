@@ -4,8 +4,10 @@
 Weighted-root-mean-square norm with RelTol = 1e-3 and AbsTol = 1e-3, where
 AbsTol is based on max. magnitude of reference values.
 
-WRMS(h) = 0.189837847237
-WRMS(v) = 63.0896314607
+```
+WRMS(h) = 0.744018189034
+WRMS(v) = 67.5087890632
+```
 
 ## MasterSim project file
 
@@ -14,15 +16,15 @@ Mind: project file is copied from working directory, hence relative path to fmu 
 
 ```
 # Created:	Mi. Juli 17 07:17:46 2019
-# LastModified:	Mi. Juli 17 16:35:16 2019
+# LastModified:	Do. Juli 18 17:52:40 2019
 
 tStart                   0 s
 tEnd                     3 s
 hMax                     30 min
 hMin                     1e-06 s
 hFallBackLimit           0.001 s
-hStart                   1e-06 s
-hOutputMin               0.001 s
+hStart                   1e-05 s
+hOutputMin               0.01 s
 adjustStepSize           no
 absTol                   1e-06
 relTol                   1e-05
