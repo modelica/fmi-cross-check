@@ -1,0 +1,5 @@
+StartTime, 0.0
+StopTime, 120.0
+StepSize, 0.05
+RelTol, 1.0e-6
+AbsTol, 1.0e-6
