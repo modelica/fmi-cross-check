@@ -1,1 +1,0 @@
-The FMI file in included in the compressed file heatexchanger.nofmu because the fmu generated is bigger than 4Mb.
