@@ -1,0 +1,1 @@
+The FMI file in included in the compressed file Rectifier.nofmu because the fmu generated is bigger than 4Mb.
