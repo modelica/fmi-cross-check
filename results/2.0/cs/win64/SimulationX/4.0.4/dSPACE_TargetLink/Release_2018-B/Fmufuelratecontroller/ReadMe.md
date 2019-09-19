@@ -27,4 +27,5 @@ ESI ITI GmbH, Schweriner Strasse 1, 01067 Dresden
 ## Notes
 
 * Provided reference result does not match Compliance Checker output, therefore, The fmuCheck output was used as reference
+* The import is successful if the fmuCheck output is used as reference, using the provided reference yields a failed result
 
