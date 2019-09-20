@@ -6,6 +6,8 @@ The FMU Fmufuelratecontroller.fmu was imported with 4.0.4.60382 (08/27/19) x64 u
 
 The import was passed
 
+The import is internally done with a much smaller protocol step width and with protocolling before and after every discontinuity. Therefore, the result comparison is done with a much more precise result output. Since the FMI Cross-Check rules stipulate that CSV files must not be larger than 1MB, the uploaded result CSV is sampled at equidistant points and thus reduced in size. Internally, an import test is much more restrictive.
+
 ## Comparison Options
 
 We used the CSV compare with the options:
@@ -23,9 +25,4 @@ We used the CSV compare with the options:
 [Contact our customer center](https://www.simulationx.com/customer-center.html). The import test run was executed by bbi@esi-group.com.
 ESI ITI GmbH, Schweriner Strasse 1, 01067 Dresden
 [https://www.simulationx.com](https://www.simulationx.com)
-
-## Notes
-
-* Provided reference result does not match Compliance Checker output, therefore, The fmuCheck output was used as reference
-* The import is successful if the fmuCheck output is used as reference, using the provided reference yields a failed result
 

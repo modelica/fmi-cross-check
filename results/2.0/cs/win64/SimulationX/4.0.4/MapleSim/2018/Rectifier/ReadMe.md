@@ -6,6 +6,8 @@ The FMU Rectifier.fmu was imported with 4.0.4.60382 (08/27/19) x64 using a CVODE
 
 The import was passed
 
+The import is internally done with a much smaller protocol step width and with protocolling before and after every discontinuity. Therefore, the result comparison is done with a much more precise result output. Since the FMI Cross-Check rules stipulate that CSV files must not be larger than 1MB, the uploaded result CSV is sampled at equidistant points and thus reduced in size. Internally, an import test is much more restrictive.
+
 ## Comparison Options
 
 We used the CSV compare with the options:
