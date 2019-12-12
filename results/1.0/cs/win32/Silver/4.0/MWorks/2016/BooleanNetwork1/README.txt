@@ -1,0 +1,1 @@
+Simulation failed due to issues with variable Y5. In _ref.csv it is almost constant for the entire simulation (value 1.0) while in the _out.csv it oscilates between 0 and 1.
