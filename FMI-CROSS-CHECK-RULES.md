@@ -1,24 +1,13 @@
-# FMI Cross-Check: How to Improve FMI Compliance
+# FMI Cross-Check: How to Improve FMI Compliance, Version 4.1
 
 
-## 1. Motivation for Cross-Check Rules Changes for 4.0
+## 1. Motivation for Cross-Check Rules Changes to 4.1
 
-The growth of the Cross-Check (XC) repository and the result tables made it necessary to both rework the data handling concept and the display concepts.
-End of March 2018 a new infrastructure for the backend, data extraction and display was finalized reflecting roughly the Cross-Check Rules 3.1 with a number of improvements.
-What is new in XC 4.0:
+What is new in XC 4.1:
 
-- new repository structure and location
-
-- new rules what to store in the repository
-
-- new extraction process of the cross-check results
-
-- new display mechanisms for the cross-check results
-
-- new fee structure for showing tools at the cross-check site starting January 2019
-
-Fees are introduced to speedup the development of the FMI standard and further improve both the standard and tool implementations.
-We are planning to involve professional writers for the standard documents, pay for new reference FMUs and major FMI Compliance Checker improvements, contract XC infrastructure improvements and hire back-office support to free the predominantly technical team from menial office tasks.
+- The FMI Steering Committee revised its decisition to introduce fees for listing in the FMI Cross-Check tables.
+ 
+- TODO: Self-assessment of XC results... XXX 
 
 
 ## 2. New Repository Structure
@@ -32,6 +21,8 @@ A continuous integration service is now in place to check any submission that vi
 
 The growing number of FMUs provided makes it more and more important to automate cross-check activities for each vendor.
 The rules have now been tightened to allow automatic result comparison with specified epsilon bands.
+
+TODO: self-assessment
 
 
 ## 4. New Result Extraction Process
@@ -55,24 +46,7 @@ These new Cross-Check Rules will not define how to show these results anymore.
 The FMI Steering Committee may decide at any time to change the way these results are displayed to improve readability and show different levels of compliance.
 
 
-## 6. New Fee structure for listing Tools at the FMI Cross-Check Site
-
-The FMI project requires funds to help improve infrastructure and to run administration more professionally.
-
-- It was decided to introduce an annual listing fee per tool of **2000,-- &euro;**.
-
--  If there are meaningful Cross-Check results published on the web-site (tool is shown with green status), the annual tool fee is reduced to **1000,-- &euro;**.
--  **This fee is waived for tools that are [open source](https://opensource.org/osd)**.
-
--  The FMI MAP reserves the right to change these fees and their structure from year to year.
-
--  Fees are bound to a calendar year.
-
--  The listing fee will not entitle tool vendors to influence how the results are being displayed.
-
-The FMI Steering Committee is sole decision maker for changes to the display mechanisms.
-If vendors do not agree how the results are displayed, vendors can ask at any time for removal of their data.
-Fees are non-refundable in any case.
+## ~~ 6. New Fee structure for listing Tools at the FMI Cross-Check Site ~~
 
 
 ## 7. Reference FMUs
@@ -94,7 +68,7 @@ New FMUs may appear in new versions of the set of Reference FMUs.
 
 - Changes to the Reference FMUs will automatically require a new version.
 
-- Rules for the FMI Cross-Check may change at most once every 12 months (including fee schedule) - taking effect at the beginning of the next calendar year (exception for this version 4.0 which will take effect ASAP after accepted by the FMI Steering Committee).
+- Rules for the FMI Cross-Check may change at most once every 12 months - taking effect at the beginning of the next calendar year.
 Exceptions: Clarifications and corrections reflecting implementations of the infrastructure may always be made to the rules document.
 
 - Information about rule changes will be communicated to fmi-design@fmi-standard.org as well as the email addresses documented in the tool info csv file.
