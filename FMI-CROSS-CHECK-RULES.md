@@ -5,53 +5,52 @@
 
 What is new in XC 4.1:
 
-- The FMI Steering Committee revised its decisition to introduce fees for listing in the FMI Cross-Check tables.
+- The FMI Steering Committee revised its decision to introduce fees for listing in the FMI Cross-Check tables.
  
-- TODO: Self-assessment of XC results... XXX 
+- The FMI Steering Committee decided to reduce the required proof for import results to the self-assessment passed/failed files.
+This will help reduce the space requirements for the Cross-Check repository without practically reducing the quality of the results.
+Existing result files for importers will be removed by the project factotum without further notice.
 
 
-## 2. New Repository Structure
+## 2. Repository Structure
 
 To facilitate this process, the Modelica Association created the [FMI cross-check repository](https://github.com/modelica/fmi-cross-check) on GitHub.
-The data was clean up to facilitate automation.
-A continuous integration service is now in place to check any submission that violates the submission rules outlined here.
+A continuous integration service is in place to check any submission that violates the submission rules outlined here.
 
 
-## 3. New Rules what to store in the Repository
+## 3. Rules what to store in the Repository
 
 The growing number of FMUs provided makes it more and more important to automate cross-check activities for each vendor.
-The rules have now been tightened to allow automatic result comparison with specified epsilon bands.
-
-TODO: self-assessment
+The rules have been tightened to allow automatic result comparison with specified epsilon bands.
 
 
-## 4. New Result Extraction Process
+## 4. Result Extraction Process
 
-The scripts that process the data were completely rewritten.
-While the previous pages on the FMI website were static HTML pages generated while processing the cross-check data, the new process involves compiling all the cross check data into a machine readable form and then rendering it dynamically on the web site.
+The current process compiles all the cross check data into a machine readable form and then renders it dynamically on the web site.
 This allows visitors to the site to search and filter the FMI compliance data interactively.
-Instead of long tables and horizontal scrollbars, the new dynamic visualization encourages users to search, filter and zoom to explore the data which generally fits on a single page.
+Instead of long tables and horizontal scrollbars, this dynamic visualization encourages users to search, filter and zoom to explore the data which generally fits on a single page.
 Users can even bookmark specific search, filter and selection settings and/or email their results to others as a single URL.
 
 If you find any issues, please report them in the [FMI cross-check repository](https://github.com/modelica/fmi-cross-check/issues).
 
-Existing results and test FMUs provided in the repository that do not comply with the new rules were removed from the cross-check repository.
+Existing results and test FMUs provided in the repository that do not comply with new rules were removed from the cross-check repository.
 
 Vendors are encouraged to fix these excluded results and test FMUs.
 
-## 5.	New Display of the Cross-Check Results
+## 5.	Display of the Cross-Check Results
 
-The new FMI Cross-Check infrastructure now displays tools and their status as well as individual results more dynamically.
-These new Cross-Check Rules will not define how to show these results anymore.
+The FMI Cross-Check infrastructure displays tools and their status as well as individual results dynamically.
+These Cross-Check Rules will not define how to show these results anymore.
 The FMI Steering Committee may decide at any time to change the way these results are displayed to improve readability and show different levels of compliance.
 
 
-## ~~ 6. New Fee structure for listing Tools at the FMI Cross-Check Site ~~
+## ~~ 6. Fee structure for listing Tools at the FMI Cross-Check Site ~~
 
+Previous plans to charge a listing fee for tools on the Cross-Check site have been dropped by the FMI Steering Committee.
 
 ## 7. Reference FMUs
 
-In addition to FMUs exported by tools listed in the tools table, there will be a (growing) number of Reference FMUs.
+In addition to FMUs exported by tools listed in the tools table, there will be a (growing) number of [Reference FMUs](https://github.com/modelica/Reference-FMUs).
 Mostly manually built, they test correct implementation of different FMU properties, such as call sequence compliance.
 In a sense, these FMUs are the opposite of the FMI Compliance Checker.
 
@@ -68,7 +67,7 @@ New FMUs may appear in new versions of the set of Reference FMUs.
 
 - Changes to the Reference FMUs will automatically require a new version.
 
-- Information about rule changes will be communicated to fmi-design@fmi-standard.org as well as the email addresses documented in the tool info csv file.
+- Information about rule changes will be communicated to fmi-design@fmi-standard.org.
 
 - If the submission rules for FMI Cross-Check are changed, non-compliant entries will be removed and vendors are encouraged to resubmit with compliant files.
 
@@ -82,7 +81,9 @@ Vendors are encouraged to participate with multiple versions of their tools, as 
 
 - All test results will be published on the FMI web pages and public repositories.
 Tool vendors are required to submit detailed information to support their compatibility claim and to make repeating compatibility tests easy for other parties.
-While FMUs must not be changed after submission, other files may be changed in order to 1) comply with new submission and formatting rules or 2) to update information such as contact details in readme files.
+While FMUs must not be changed after submission, other files may be changed in order to
+  * comply with new submission and formatting rules or
+  * to update information such as contact details in readme files.
 
 
 ### 9.1 FMU Exporting
@@ -102,6 +103,8 @@ Vendors are encouraged to produce FMUs that are also free of all FMI Compliance 
 
 FMUs for the “c-code” platform are exempt from this rule until the FMI Compliance Checker supports the “c-code” platform.
 
+// TODO: what about FMPy here? Second alternative? Drop this entirely?
+
 If the FMU has inputs, the FMI Compliance Checker must be run with the input signals as specified in {Model_Name}_in.csv.
 Vendors are encouraged to report problems and improvement suggestions for the FMI Compliance Checker [here](https://github.com/modelica-tools/FMUComplianceChecker).
 
@@ -109,7 +112,7 @@ Vendors are encouraged to report problems and improvement suggestions for the FM
 #### 9.1.3 License Checks
 
 All FMUs submitted to the repository must run without license checks and contain all required files (DLLs, data files etc.) to allow running in any importing tool supporting the specified platform without additional requirements.
-Vendors that create only FMUs with license check or FMUs that provide access to licensed tools and would like to be listed in the Cross-Check Table have to organize one-to-one tests with importing tool vendors to solve license or compile/link issues.
+Vendors that create only FMUs with license check or FMUs that provide access to licensed tools and would like to be listed in the Cross-Check table have to organize one-to-one tests with importing tool vendors to solve license or compile/link issues.
 
 
 #### 9.1.4 Files to submit
@@ -196,9 +199,8 @@ Vendors of tools that import FMUs that provide access to licensed tools and woul
 
 To submit per imported FMU:
 
-- `{Model_Name}_out.csv`: Computed results as a CSV file for the same variables as given in the reference CSV file.
-
-- In order to classify the result as `passed`, the results should correspond to the reference solution.
+- ~~`{Model_Name}_out.csv`: Computed results as a CSV file for the same variables as given in the reference CSV file.~~
+This requirement was dropped to reduce the space requirement of the repository.
 
 - Test results are indicated with one of the following files: `passed`, `rejected` or `failed`.
 If no such file is given, the test is considered `failed`.
@@ -211,9 +213,6 @@ Ideally this uses some kind of automation provided by the importing tool.
   - in case of failure to run: an analysis of the reasons.
 
   This file is only needed if either test setup or test failure have to be described.
-
-If a `passed` claim is made, the validation script will test the submitted results against the reference solution with a wide tolerance band.
-Violating such a loose correctness interpretation will lead to automatic rejection of the `passed` file.
 
 
 #### 9.2.4 Directory Structure
@@ -243,17 +242,6 @@ Placeholder   | Possible Values
                   - passed
                   - Rectifier_out.csv
 ```
-
-
-#### 9.2.5 Detection of Questionable Submissions Import Results
-
-The provided import results are filtered against the reference solution provided by the exporter using the following epsilon band method:
-
-Each reference signal is re-sampled (using linear interpolation) into an array of 1000 equally spaced samples between the first and last element of the reference time.
-The upper limit `y_max` of the epsilon band is calculated by taking the maximum of 21 neighboring values (10 to either side) at each sample point and adding 10% of the absolute maximum of all values in the reference signal (or `0.5` if all values are equal 0).
-The lower `y_min` is calculated respectively.
-The validation passes if at least 90% of the samples in the provided output are inside the epsilon band defined by `y_min` and `y_max` (again linearly interpolated at the respective sample time of the result file).
-Samples before and after the first and last sample time of the reference result will be ignored.
 
 
 ## 10. Appendix B – CSV Rules
