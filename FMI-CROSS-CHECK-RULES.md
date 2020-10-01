@@ -68,9 +68,6 @@ New FMUs may appear in new versions of the set of Reference FMUs.
 
 - Changes to the Reference FMUs will automatically require a new version.
 
-- Rules for the FMI Cross-Check may change at most once every 12 months - taking effect at the beginning of the next calendar year.
-Exceptions: Clarifications and corrections reflecting implementations of the infrastructure may always be made to the rules document.
-
 - Information about rule changes will be communicated to fmi-design@fmi-standard.org as well as the email addresses documented in the tool info csv file.
 
 - If the submission rules for FMI Cross-Check are changed, non-compliant entries will be removed and vendors are encouraged to resubmit with compliant files.
