@@ -5,7 +5,7 @@
 
 What is new in XC 4.1:
 
-- The FMI Steering Committee revised its decision to introduce fees for listing in the FMI Cross-Check tables.
+- The FMI Steering Committee revised its decision to introduce fees for listing in the FMI Cross-Check tables: There will be no listing fees for Cross-Check results.
  
 - The FMI Steering Committee decided to reduce the required proof for import results to the self-assessment passed/failed files.
 This will help reduce the space requirements for the Cross-Check repository without practically reducing the quality of the results.
