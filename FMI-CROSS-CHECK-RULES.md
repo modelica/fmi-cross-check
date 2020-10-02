@@ -14,14 +14,14 @@ Existing result files for importers will be removed by the project factotum with
 
 ## 2. Repository Structure
 
-To facilitate this process, the Modelica Association created the [FMI cross-check repository](https://github.com/modelica/fmi-cross-check) on GitHub.
+To facilitate this process, the Modelica Association created the [FMI Cross-Check repository](https://github.com/modelica/fmi-cross-check) on GitHub.
 A continuous integration service is in place to check any submission that violates the submission rules outlined here.
 
 
 ## 3. Rules what to store in the Repository
 
-The growing number of FMUs provided makes it more and more important to automate cross-check activities for each vendor.
-The rules have been tightened to allow automatic result comparison with specified epsilon bands.
+The growing number of FMUs provided makes it more and more important to automate Cross-Check activities for each vendor.
+The Cross-Check rules allow automatic result comparison with specified epsilon bands.
 
 
 ## 4. Result Extraction Process
@@ -31,9 +31,9 @@ This allows visitors to the site to search and filter the FMI compliance data in
 Instead of long tables and horizontal scrollbars, this dynamic visualization encourages users to search, filter and zoom to explore the data which generally fits on a single page.
 Users can even bookmark specific search, filter and selection settings and/or email their results to others as a single URL.
 
-If you find any issues, please report them in the [FMI cross-check repository](https://github.com/modelica/fmi-cross-check/issues).
+If you find any issues, please report them in the [FMI Cross-Check repository](https://github.com/modelica/fmi-cross-check/issues).
 
-Existing results and test FMUs provided in the repository that do not comply with new rules were removed from the cross-check repository.
+Existing results and test FMUs provided in the repository that do not comply with new rules were removed from the Cross-Check repository.
 
 Vendors are encouraged to fix these excluded results and test FMUs.
 
@@ -50,7 +50,7 @@ Previous plans to charge a listing fee for tools on the Cross-Check site have be
 
 ## 7. Reference FMUs
 
-In addition to FMUs exported by tools listed in the tools table, there will be a (growing) number of [Reference FMUs](https://github.com/modelica/Reference-FMUs).
+In addition to FMUs exported by tools listed in the tools table, there are [Reference FMUs](https://github.com/modelica/Reference-FMUs).
 Mostly manually built, they test correct implementation of different FMU properties, such as call sequence compliance.
 In a sense, these FMUs are the opposite of the FMI Compliance Checker.
 
@@ -65,7 +65,7 @@ New FMUs may appear in new versions of the set of Reference FMUs.
 
 ## 8. Changes to the FMI Cross-Check Rules
 
-- Changes to the Reference FMUs will automatically require a new version.
+- Changes to the Reference FMUs will automatically require a new Reference FMU version.
 
 - Information about rule changes will be communicated to fmi-design@fmi-standard.org.
 
@@ -192,7 +192,7 @@ FMU importing tools must report on importing for the latest versions of all Refe
 
 #### 9.2.2 License Checks
 
-Vendors of tools that import FMUs that provide access to licensed tools and would like to be listed in the Cross-Check Table have to organize one-to-one tests with those tool vendors to produce testimonials for successful Cross-Check results.
+Vendors of tools that import FMUs that provide access to licensed tools and would like to be listed in the Cross-Check Table have to organize one-to-one tests with those tool vendors to produce testimonials for successful results.
 
 
 #### 9.2.3 Files to submit
@@ -242,6 +242,10 @@ Placeholder   | Possible Values
                   - passed
                   - Rectifier_out.csv
 ```
+
+#### 9.2.5 Detection of Questionable Submissions Import Results
+
+Upon request, importers must present simulation results and a comparison to the reference solution provided by the exporter of the FMU to the FMI Steering Committee, which may reject results that differ significantly from the reference.
 
 
 ## 10. Appendix B – CSV Rules
