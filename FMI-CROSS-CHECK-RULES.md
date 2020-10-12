@@ -112,7 +112,7 @@ Vendors are encouraged to report problems and improvement suggestions for the FM
 #### 9.1.3 License Checks
 
 All FMUs submitted to the repository must run without license checks and contain all required files (DLLs, data files etc.) to allow running in any importing tool supporting the specified platform without additional requirements.
-Vendors that create only FMUs with license check or FMUs that provide access to licensed tools and would like to be listed in the Cross-Check table have to organize one-to-one tests with importing tool vendors to solve license or compile/link issues.
+Vendors that create only FMUs with license check or FMUs that provide access to licensed tools and would like to be listed in the Cross-Check table have to organize one-to-one tests with importing tool vendors to solve license or compile/link issues and submit a {Model_Name}.nofmu file instead (see next section).
 
 
 #### 9.1.4 Files to submit
@@ -120,7 +120,7 @@ Vendors that create only FMUs with license check or FMUs that provide access to 
 To submit per exported FMU stored on the repository:
 
 - `{Model_Name}.fmu`: The FMU.
-If the FMU cannot be provided (e.g. because it contains critical intellectual property), submit a file {Model_Name}.nofmu.
+If the FMU cannot be provided (e.g. because it contains critical intellectual property or requires a license), submit a file {Model_Name}.nofmu.
 The README file shall contain information about how to get access to that FMU directly from the exporting tool vendor.
 
 - `{Model_Name}_ref.csv`: Reference solution as computed by the exporting tool.
