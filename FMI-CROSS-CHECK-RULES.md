@@ -103,8 +103,6 @@ Vendors are encouraged to produce FMUs that are also free of all FMI Compliance 
 
 FMUs for the “c-code” platform are exempt from this rule until the FMI Compliance Checker supports the “c-code” platform.
 
-// TODO: what about FMPy here? Second alternative? Drop this entirely?
-
 If the FMU has inputs, the FMI Compliance Checker must be run with the input signals as specified in {Model_Name}_in.csv.
 Vendors are encouraged to report problems and improvement suggestions for the FMI Compliance Checker [here](https://github.com/modelica-tools/FMUComplianceChecker).
 
