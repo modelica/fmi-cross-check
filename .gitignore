@@ -3,6 +3,8 @@
 !.circleci/
 !*.md
 !*/
+!result_tables.py
+!validate_repo.py
 
 # FMUs
 !fmus/*/*/*/*/*/*/*.fmu
