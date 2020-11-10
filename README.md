@@ -1,7 +1,5 @@
 # FMI Cross-Check
 
-[![CircleCI](https://circleci.com/gh/modelica/fmi-cross-check/tree/master.svg?style=svg)](https://circleci.com/gh/modelica/fmi-cross-check/tree/master)
-
 This repository contains the exported FMUs and results for imported FMUs of the tools that take part in the FMI Cross-Check.
 If your tool is listed on [fmi-standard.org/tools/](https://fmi-standard.org/tools/) you can add your FMUs and results by following the steps below.
 For details see the official [FMI Cross-Check rules](FMI-CROSS-CHECK-RULES.md).
