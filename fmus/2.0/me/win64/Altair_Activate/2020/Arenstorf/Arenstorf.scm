@@ -6,7 +6,7 @@
       <property name="creator" value="masoud"/>
       <property name="creationdate" value="08/13/12 16:02:06"/>
       <property name="revision" value=""/>
-      <property name="lastmodifieddate" value="11/10/20 10:13:56"/>
+      <property name="lastmodifieddate" value="11/10/20 11:02:51"/>
       <property name="comments" value=""/>
     </properties>
   </edition>
@@ -4589,7 +4589,7 @@
         <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
         <frame shape="rectangle" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="255,255,255,255"/>
-        <position x="230.835419" y="390.738739"/>
+        <position x="250.75537139257813" y="390.738739"/>
         <size width="156" height="108"/>
         <rotate angle="0"/>
         <texts>
@@ -6627,7 +6627,7 @@
       <to block="Mux" port="2" iotype="in"/>
       <pen shape="line" color="64,64,64,255" thickness="1.5"/>
       <points>
-        <point x="424.598663" y="289.218506"/>
+        <point x="424.5986629999998" y="289.2185060000003"/>
         <point x="424.59866300000004" y="221.30433699999998"/>
       </points>
     </link>
