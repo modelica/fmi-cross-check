@@ -35,5 +35,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-fmuCheck.win64.exe -k me -o sb_arenstorf_ref.csv  -s 20  -h 1e-6 -n 100 -c , sb_arenstorf.fmu
+./fmuCheck.linux64 -k me -o Arenstorf_ref.csv  -s 20  -h 1e-6 -n 100 -c , Arenstorf.fmu
 ```

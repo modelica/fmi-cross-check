@@ -36,5 +36,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -k me -o sb_CVLoop_ref.csv  -s 5 -h 1e-4 -c ,  -n 500 sb_CVLoop.fmu
+fmuCheck.win64.exe -k me -o CVLoop_ref.csv  -s 5 -h 1e-4 -c ,  -n 500 CVLoop.fmu
 ```

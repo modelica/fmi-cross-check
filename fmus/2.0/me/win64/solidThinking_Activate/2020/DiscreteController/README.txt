@@ -1,5 +1,6 @@
 Model:
-ActivateRC: Simulating an Active RC filter using nested FMUs
+sb_DCMotor_Controller: This FMU simulates a DC motor controlled by a discrete-time controller to 
+follow a reference angle.
 
 FMI Type:
 ModelExchange
@@ -22,5 +23,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -k me -o sb_ActiveRC_ref.csv  -s 10  -h 1e-1 -c , -i Signal.csv sb_ActiveRC.fmu
+fmuCheck.win64.exe -k me -o DiscreteController_ref.csv  -s 10  -h 1e-3 -c , -i DiscreteController_in.csv -n 100 DiscreteController.fmu
 ```

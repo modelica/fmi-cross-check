@@ -1,6 +1,5 @@
 Model:
-sb_DCMotor_Controller: This FMU simulates a DC motor controlled by a discrete-time controller to 
-follow a reference angle.
+Boocwen: Simulating the Boocwen damper system
 
 FMI Type:
 ModelExchange
@@ -23,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-fmuCheck.win64.exe -k me -o sb_DCMotor_Controller_ref.csv  -s 10  -h 1e-3 -c , -i angle.csv -n 100 sb_DCMotor_Controller.fmu
+./fmuCheck.linux64.exe -o Boocwen_ref.csv  -s 0.1  -h 1e-4 -n 100 -c , Boocwen.fmu
 ```

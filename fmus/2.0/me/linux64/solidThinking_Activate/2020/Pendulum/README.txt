@@ -1,5 +1,5 @@
 Model:
-Boocwen: Simulating the Boocwen damper system
+Pendulum: Simulating of Pendulum with a dampber Modeled in Modelica
 
 FMI Type:
 ModelExchange
@@ -22,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-fmuCheck.win64.exe -k me -o sb_Boocwen_ref.csv  -s 0.1  -h 1e-4 -n 100 -c , sb_Boocwen.fmu
+./fmuCheck.linux64 -k me -o Pendulum_ref.csv -s 5  -h 1e-3  -n 100 -c , Pendulum.fmu
 ```

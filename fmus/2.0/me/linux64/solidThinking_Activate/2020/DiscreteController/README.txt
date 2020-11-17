@@ -1,5 +1,6 @@
 Model:
-Pendulum: Simulating of Pendulum with a dampber Modeled in Modelica
+sb_DCMotor_Controller: This FMU simulates a DC motor controlled by a discrete-time controller to 
+follow a reference angle.
 
 FMI Type:
 ModelExchange
@@ -22,5 +23,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -k me -o sb_pendulum_ref.csv -s 5  -h 1e-3  -n 100 -c , sb_pendulum.fmu
+./fmuCheck.linux64 -k me -o DiscreteController_ref.csv  -s 10  -h 1e-3 -c , -i DiscreteController_in.csv -n 100 DiscreteController.fmu
 ```

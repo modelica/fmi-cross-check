@@ -1,5 +1,5 @@
 Model:
-Pendulum: Simulating of Pendulum with a dampber Modeled in Modelica
+ActivateRC: Simulating an Active RC filter using nested FMUs
 
 FMI Type:
 ModelExchange
@@ -22,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-fmuCheck.win64.exe -k me -o sb_pendulum_ref.csv -s 5  -h 1e-3  -n 100 -c , sb_pendulum.fmu
+./fmuCheck.linux64 -k me -o ActiveRC_ref.csv  -s 10  -h 1e-1 -c , -i ActivateRC_in.csv ActiveRC.fmu
 ```
