@@ -22,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-fmuCheck.win64.exe -e sb_arenstorf.log -o sb_arenstorf_ref.csv  -s 0.1  -h 1e-4 -n 100 -c , sb_arenstorf.fmu
+fmuCheck.win64.exe -k me -o sb_Boocwen_ref.csv  -s 0.1  -h 1e-4 -n 100 -c , sb_Boocwen.fmu
 ```
