@@ -1,5 +1,5 @@
 Model:
-ActivateRC: Simulating an Active RC filter using nested FMUs
+Boocwen: Simulating the Boocwen damper system
 
 FMI Type:
 CoSimulation
@@ -22,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -o sb_ActiveRC_ref.csv  -s 10  -h 1e-1 -c , -i Signal.csv sb_ActiveRC.fmu
+./fmuCheck.linux64 -k cs -o Boocwen_ref.csv  -s 0.1  -h 1e-3 -c , Boocwen.fmu
 ```
