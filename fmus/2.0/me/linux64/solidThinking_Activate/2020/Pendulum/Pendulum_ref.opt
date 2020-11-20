@@ -1,6 +1,6 @@
-StartTime, 0.0         // in seconds
-StopTime, 5.0          // in seconds
-StepSize, 0.001         // in seconds, 0.0 means variable step solver
+StartTime, 0.0   
+StopTime, 5.0      
+StepSize, 0.001  
 RelTol, 0.0001
 AbsTol, 0.0001
-OutputIntervalLength,0.05   // reference data provided with this time spacing in seconds
+OutputIntervalLength,0.05
