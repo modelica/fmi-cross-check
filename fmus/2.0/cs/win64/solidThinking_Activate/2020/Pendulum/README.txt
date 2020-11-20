@@ -1,8 +1,8 @@
 Model:
-ActivateRC: Simulating an Active RC filter using nested FMUs
+Pendulum: Simulating of Pendulum with a dampber Modeled in Modelica
 
 FMI Type:
-ModelExchange
+CoSimulation
 
 Generation Tool:
 Altair Activate 2020
@@ -22,5 +22,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -k me -o ActivateRC_ref.csv  -s 10  -h 1e-1 -c , -i ActivateRC_in.csv ActivateRC.fmu
+fmuCheck.win64.exe -k cs -o Pendulum_ref.csv -s 5  -h 5e-2 -c , Pendulum.fmu
 ```
