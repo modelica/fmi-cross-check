@@ -3,4 +3,4 @@ lark
 numpy
 pathlib
 scipy
-fmpy==0.2.25
+fmpy==0.2.27
