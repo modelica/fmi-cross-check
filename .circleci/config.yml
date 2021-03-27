@@ -37,3 +37,4 @@ jobs:
             pwd
             ls -al
             python --version
+            python validate_repo.py
