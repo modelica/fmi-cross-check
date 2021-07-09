@@ -1,0 +1,39 @@
+[INFO][FMUCHK] FMI compliance checker 2.0.4 [FMILibrary: 2.0.3] build date: Nov  6 2017
+[INFO][FMUCHK] Called with following options:
+[INFO][FMUCHK] Z:/maple2018_2/2018-11-13/1362139\toolbox_source\FMIConnector\bin.IBM_INTEL_NT\FMUChecker-2.0.4\fmuCheck.win32.exe -i Z:/maple2018_2/2018-11-13/1362139\toolbox_source\FMIConnector\maple\tst\data\CoupledClutches_in.csv -e Z:/maple2018_2/2018-11-13/1362139\toolbox_source\FMIConnector\maple\tst\temp\win32\CoupledClutches_CS_cc.log -o Z:/maple2018_2/2018-11-13/1362139\toolbox_source\FMIConnector\maple\tst\temp\win32\CoupledClutches_CS_cc.csv -n 151 -s 1.5 -h 1e-2 -t C:/temp/tester0/tester.36696/bcXD3ayi/ C:/temp/tester0/tester.36696/bcXD3ayi/\CoupledClutches.fmu
+[INFO][FMUCHK] Will process FMU C:/temp/tester0/tester.36696/bcXD3ayi/\CoupledClutches.fmu
+[INFO][FMILIB] XML specifies FMI standard version 2.0
+[INFO][FMUCHK] Model name: CoupledClutches
+[INFO][FMUCHK] Model GUID: {d040ee81-b297-8614-cc52-94f6c5a2a087}
+[INFO][FMUCHK] Model version: 
+[INFO][FMUCHK] FMU kind: CoSimulation
+[INFO][FMUCHK] The FMU contains:
+0 constants
+4 parameters
+38 discrete variables
+106 continuous variables
+1 inputs
+4 outputs
+139 local variables
+0 independent variables
+0 calculated parameters
+147 real variables
+0 integer variables
+0 enumeration variables
+0 boolean variables
+1 string variables
+
+[INFO][FMUCHK] Printing output file header
+[INFO][FMUCHK] Opening input file Z:/maple2018_2/2018-11-13/1362139\toolbox_source\FMIConnector\maple\tst\data\CoupledClutches_in.csv
+[INFO][FMUCHK] Detected separator character in input file: ,
+[INFO][FMUCHK] Model identifier for CoSimulation: CoupledClutches
+[INFO][FMILIB] Loading 'win32' binary with 'default' platform types
+[INFO][FMUCHK] Version returned from CS FMU:   2.0
+[INFO][FMUCHK] Initialized FMU for simulation starting at time 0
+[INFO][FMUCHK] Simulation finished successfully at time 1.5
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	0 Warning(s)
+	0 Error(s)

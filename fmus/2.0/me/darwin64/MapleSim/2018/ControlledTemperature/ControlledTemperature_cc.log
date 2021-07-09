@@ -1,0 +1,38 @@
+[INFO][FMUCHK] FMI compliance checker Test [FMILibrary: Test] build date: Oct  9 2018
+[INFO][FMUCHK] Called with following options:
+[INFO][FMUCHK] /maple/cbat/maple2018_2/2018-10-25/1357197/toolbox_source/FMIConnector/bin.APPLE_UNIVERSAL_OSX/FMUChecker-2.0.4/fmuCheck.darwin64 -e /maple/cbat/maple2018_2/2018-10-25/1357197/toolbox_source/FMIConnector/maple/tst/temp/darwin64/ControlledTemperature_ME_cc.log -o /maple/cbat/maple2018_2/2018-10-25/1357197/toolbox_source/FMIConnector/maple/tst/temp/darwin64/ControlledTemperature_ME_cc.csv -n 500 -s 10 -h 1e-3 -t /usr/local/tmp/maple/tester0/tester.81214/jqcaKMLi/ /usr/local/tmp/maple/tester0/tester.81214/jqcaKMLi//ControlledTemperature.fmu
+[INFO][FMUCHK] Will process FMU /usr/local/tmp/maple/tester0/tester.81214/jqcaKMLi//ControlledTemperature.fmu
+[INFO][FMILIB] XML specifies FMI standard version 2.0
+[INFO][FMUCHK] Model name: ControlledTemperature
+[INFO][FMUCHK] Model GUID: {4b725a31-eb8f-ee23-9c69-a584815af374}
+[INFO][FMUCHK] Model version: 
+[INFO][FMUCHK] FMU kind: ModelExchange
+[INFO][FMUCHK] The FMU contains:
+0 constants
+4 parameters
+7 discrete variables
+28 continuous variables
+0 inputs
+2 outputs
+33 local variables
+0 independent variables
+0 calculated parameters
+38 real variables
+0 integer variables
+0 enumeration variables
+0 boolean variables
+1 string variables
+
+[INFO][FMUCHK] Printing output file header
+[INFO][FMUCHK] Model identifier for ModelExchange: ControlledTemperature
+[INFO][FMILIB] Loading 'darwin64' binary with 'default' platform types
+[INFO][FMUCHK] Version returned from ME FMU: '2.0'
+
+[INFO][FMUCHK] Initialized FMU for simulation starting at time 0
+[INFO][FMUCHK] Simulation finished successfully at time 10
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	0 Warning(s)
+	0 Error(s)
