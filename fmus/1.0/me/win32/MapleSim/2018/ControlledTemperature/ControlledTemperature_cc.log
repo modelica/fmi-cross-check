@@ -1,0 +1,38 @@
+[INFO][FMUCHK] FMI compliance checker 2.0.4 [FMILibrary: 2.0.3] build date: Nov  6 2017
+[INFO][FMUCHK] Called with following options:
+[INFO][FMUCHK] Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\bin.IBM_INTEL_NT\FMUChecker-2.0.4\fmuCheck.win32.exe -e Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\temp\win32_rdwiorc10.maplesoft.com\ControlledTemperature_ME_cc.log -o Z:/maple2018_2/2018-10-25/1357326\toolbox_source\FMIConnector\maple\tst\temp\win32_rdwiorc10.maplesoft.com\ControlledTemperature_ME_cc.csv -n 500 -s 10 -h 1e-3 -t C:/temp/tester0/tester.10900/3b0XTk40/ C:/temp/tester0/tester.10900/3b0XTk40/\ControlledTemperature.fmu
+[INFO][FMUCHK] Will process FMU C:/temp/tester0/tester.10900/3b0XTk40/\ControlledTemperature.fmu
+[INFO][FMILIB] XML specifies FMI standard version 1.0
+[INFO][FMUCHK] Model name: ControlledTemperature
+[INFO][FMUCHK] Model identifier: ControlledTemperature
+[INFO][FMUCHK] Model GUID: {9a59150b-7af3-05bd-538e-4aaa96cb573a}
+[INFO][FMUCHK] Model version: 
+[INFO][FMUCHK] FMU kind: ModelExchange
+[INFO][FMUCHK] The FMU contains:
+0 constants
+2 parameters
+0 discrete variables
+37 continuous variables
+0 inputs
+2 outputs
+37 internal variables
+0 variables with causality 'none'
+39 real variables
+0 integer variables
+0 enumeration variables
+0 boolean variables
+0 string variables
+
+[INFO][FMUCHK] Printing output file header
+[INFO][FMILIB] Loading 'win32' binary with 'standard32' platform types
+[INFO][FMUCHK] Version returned from FMU:   1.0
+[INFO][FMUCHK] Checking that FMI set functions can be called with zero length arrays
+[INFO][FMUCHK] Initialized FMU for simulation starting at time 0
+[INFO][FMUCHK] Checking that FMI get functions can be called with zero length arrays
+[INFO][FMUCHK] Simulation finished successfully at time 10
+FMU check summary:
+FMU reported:
+	0 warning(s) and error(s)
+Checker reported:
+	0 Warning(s)
+	0 Error(s)

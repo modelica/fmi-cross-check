@@ -1,0 +1,2 @@
+silversim -S 0 -E 10 -d 0.100000 fmu_name=ForkLift fmu20cs=true input_exists=true -c C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\cs\win64\Adams\2017.2\ForkLift\test_4000.sil -s macro_step=0.005
+%SILVER_HOME%\common\ext-tools\CsvCompare\Compare.exe --delimiter=, --nometareport --override --inline C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\cs\win64\Adams\2017.2\ForkLift\ForkLift_out.csv C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\cs\win64\Adams\2017.2\ForkLift\ForkLift_ref.csv  --override --comparisonflag

@@ -1,0 +1,1 @@
+Wrong path in resource.fmu source code pointing to the resource folder. PR added for the vendor. 

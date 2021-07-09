@@ -1,9 +1,8 @@
 # FMI Cross-Check
 
-[![CircleCI](https://circleci.com/gh/modelica/fmi-cross-check/tree/master.svg?style=svg)](https://circleci.com/gh/modelica/fmi-cross-check/tree/master)
-
 This repository contains the exported FMUs and results for imported FMUs of the tools that take part in the FMI Cross-Check.
 If your tool is listed on [fmi-standard.org/tools/](https://fmi-standard.org/tools/) you can add your FMUs and results by following the steps below.
+For details see the official [FMI Cross-Check rules](FMI-CROSS-CHECK-RULES.md).
 
 ## Fork and clone the repository
 
@@ -24,8 +23,8 @@ fmus
             + Model_Name
               - Model_Name_in.csv  (optional)
               - Model_Name_ref.csv
-              - Mode_lName_ref.opt
-              - Mode_lName.fmu
+              - Model_Name_ref.opt
+              - Model_Name.fmu
               - README.[md|txt]
 ```
 
@@ -40,8 +39,7 @@ fmus
 | Model_Name_in.csv  | Input file (optional)
 | Model_Name_ref.csv | Reference results
 | Model_Name_ref.opt | Simulation settings to reproduce reference results
-| Mode_lName.fmu     | The exported FMU
-| Mode_lName.fmu     | The exported FMU
+| Model_Name.fmu     | The exported FMU
 | README.txt         | A text (`.txt`) or Markdown (`.md`) file that describes the FMU (optional)
 
 ## Add results
@@ -77,13 +75,24 @@ results
 
 ## Validate the files
 
-`EXPERIMENTAL` Clone the FMPy repository and run the validation
+Before pushing your changes to GitHub, please validate the repository by running
 
 ```
-git clone https://github.com/CATIA-Systems/FMPy.git --branch feature/fmi-xc
-cd FMPy
-python -m fmpy.cross_check.validate_vendor_repo /path/to/fmi-cross-check
+python validate_repo.py
 ```
+
+and fix any reported problems.
+
+Expected output:
+
+```
+#################################
+0 problems found in /path/to/fmi-cross-check
+Validated 1233 FMUs and 10008 results
+#################################
+```
+
+To run the script you have to install the dependencies listed in [requirements.txt](requirements.txt).
 
 ## Make a pull request
 

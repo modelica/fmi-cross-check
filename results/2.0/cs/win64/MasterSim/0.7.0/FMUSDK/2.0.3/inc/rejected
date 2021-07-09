@@ -1,0 +1,13 @@
+FMU fails to complete last step (invalid!), issues error message:
+
+-----
+
+Interval [ 1.198999999999979e+01 ...  1.199999999999979e+01] with h=1.000000000000e-02
+
+[slave1:logFmiCall] fmi2DoStep: currentCommunicationPoint = 11.99, communicationStepSize = 0.01, noSetFMUStatePriorToCurrentPoint = fmi2True
+
+[slave1:logEvent] fmi2DoStep: time event detected at 12
+
+[slave1:logAll] fmi2DoStep: model requested termination at t=12
+
+-----

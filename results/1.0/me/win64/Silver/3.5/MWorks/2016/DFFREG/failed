@@ -1,0 +1,2 @@
+silversim -S  0 -E  25 -d 0.100000 fmu_name=DFFREG fmu20=true -c C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\me\win64\MWorks\2016\DFFREG\test_3520.sil -s solver="-x 3"
+%SILVER_HOME%\common\ext-tools\CsvCompare\Compare.exe --delimiter=, --nometareport --override --inline C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\me\win64\MWorks\2016\DFFREG\DFFREG_out.csv C:\work\projects\12_FMI_XC\repos\fmi-cross-check-SO-branch\fmus\1.0\me\win64\MWorks\2016\DFFREG\DFFREG_ref.csv  --override --comparisonflag
