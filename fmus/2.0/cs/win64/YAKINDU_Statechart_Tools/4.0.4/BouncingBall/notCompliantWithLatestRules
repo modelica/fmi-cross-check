@@ -1,0 +1,7 @@
+Functional Mock-up Interface 2.0.2
+Dec 15th 2020
+Page 49 of 130
+
+Initial: Enumeration that defines how the variable is initialized. It
+is not allowed to provide a value for initial if causality = "input"
+or "independent":
