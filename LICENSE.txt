@@ -1,6 +1,0 @@
-The FMUs uploaded to this repository are provided to for testing purposes within the FMI Cross Check only. For this purpose the FMUs may be simulated by in importing tools.
-
-Typically, all further rights are reseverd by the tool vendors who upload the FMUs.
-More information can be found in the subfolders under https://github.com/modelica/fmi-cross-check/tree/master/fmus and/or the docuementation folder of the FMUs.
-
-It is in the responsibility of the providers of the FMUs to comply with license conditions of third parties, e.g., w.r.t open source licenses of software contained in the FMUs or in used in the creation of the FMUS, e.g., by shipping the corresponding license texts within the documentation folder FMU.
