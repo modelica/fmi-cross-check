@@ -1,7 +1,9 @@
+import os
+
+
 def generate_result_tables(repo_dir, data_dir):
     """ Generate the cross-check result tables """
 
-    import os
     import csv
     from fmpy.cross_check import get_vendor_ids
 
@@ -184,7 +186,8 @@ def generate_result_tables(repo_dir, data_dir):
         writer.writerows(rows)
 
 
-if __name__ is '__main__':
+if __name__ == '__main__':
+    
     repo_dir = os.path.dirname(__file__)
     data_dir = os.path.join(os.path.dirname(repo_dir), 'fmi-standard.org', '_data')
     generate_result_tables(repo_dir=repo_dir, data_dir=data_dir)
