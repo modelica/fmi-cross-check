@@ -1,0 +1,1 @@
+* It is not allowed to provide a value for initial if causality = "input" or "independent".
