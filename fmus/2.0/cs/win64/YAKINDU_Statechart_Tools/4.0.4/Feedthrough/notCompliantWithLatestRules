@@ -1,0 +1,2 @@
+* It is not allowed to provide a value for initial if causality = "input" or "independent".
+* The provided FMU doesn't contain all required files (DLLs, data files etc.) to allow running in any importing tool supporting the specified platform without additional requirements.
