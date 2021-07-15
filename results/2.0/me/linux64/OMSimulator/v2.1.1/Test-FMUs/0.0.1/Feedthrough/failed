@@ -1,0 +1,4 @@
+Signal 'bool_out' doesn't match reference results
+Signal 'int_out' doesn't match reference results
+Signal 'real_discrete_out' doesn't match reference results
+Signal 'real_continuous_out' doesn't match reference results
