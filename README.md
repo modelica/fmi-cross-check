@@ -56,7 +56,6 @@ results
             + Exporing_Tool_ID
               + Exporting_Tool_Version
                 + Model_Name
-                  - Model_Name_out.csv
                   - passed / failed / rejected (optional)
                   - README.[md|txt]
 ```
@@ -73,9 +72,9 @@ results
 | Model_Name             | Name of the imported FMU (w/o file extension)
 | README.txt             | A text (`.txt`) or Markdown (`.md`) file that describes how to import the FMU
 
-## Validate the files
+## Validate the FMUs
 
-Before pushing your changes to GitHub, please validate the repository by running
+Before pushing your FMUs to GitHub, please validate the repository by running
 
 ```
 python validate_repo.py
@@ -88,7 +87,7 @@ Expected output:
 ```
 #################################
 0 problems found in /path/to/fmi-cross-check
-Validated 1233 FMUs and 10008 results
+Validated 1530 FMUs
 #################################
 ```
 
