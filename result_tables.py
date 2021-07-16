@@ -64,6 +64,7 @@ def generate_result_tables(repo_dir, data_dir):
         """ Build the result matrix for an FMI version, type and platform """
 
         importing_tools = set()
+        importing_tools_with_version = set()
         exporting_tools = set()
 
         filtered = []
@@ -74,10 +75,13 @@ def generate_result_tables(repo_dir, data_dir):
             if fmi_version_ != fmi_version or fmi_type_ != fmi_type or platform_ != platform:
                 continue
 
+            importing_tools_with_version_name = f'{importing_tool_name} ({importing_tool_version})'
+
             importing_tools.add(importing_tool_name)
+            importing_tools_with_version.add(importing_tools_with_version_name)
             exporting_tools.add(exporting_tool_name)
 
-            filtered.append((importing_tool_name, importing_tool_version, exporting_tool_name, exporting_tool_version, model_name))
+            filtered.append((importing_tool_name, importing_tool_version, importing_tools_with_version_name, exporting_tool_name, exporting_tool_version, model_name))
 
         # build matrix
         importing_tools = sorted(importing_tools, key=lambda s: s.lower())
@@ -85,17 +89,17 @@ def generate_result_tables(repo_dir, data_dir):
 
         matrix = []
 
-        for importing_tool in importing_tools:
+        for importing_tool in importing_tools_with_version:
             row = []
             for exporting_tool in exporting_tools:
                 count = 0
                 for r in filtered:
-                    if r[0] == importing_tool and r[2] == exporting_tool:
+                    if r[2] == importing_tool and r[3] == exporting_tool:
                         count += 1
                 row.append(count)
             matrix.append(row)
 
-        return importing_tools, exporting_tools, matrix
+        return importing_tools, importing_tools_with_version, exporting_tools, matrix
 
     results = collect_results()
 
@@ -109,7 +113,7 @@ def generate_result_tables(repo_dir, data_dir):
 
     for fmi_version, fmi_type, platform in combinations:
 
-        importing_tools, exporting_tools, matrix = matrices[(fmi_version, fmi_type, platform)]
+        importing_tools, importing_tools_with_version, exporting_tools, matrix = matrices[(fmi_version, fmi_type, platform)]
 
         importing_tools = [tools[tool_id] for tool_id in importing_tools]
         exporting_tools = [tools[tool_id] for tool_id in exporting_tools]
@@ -122,7 +126,7 @@ def generate_result_tables(repo_dir, data_dir):
 
         with open(os.path.join(data_dir, 'cross-check', csv_filename), 'w') as f:
             f.write(','.join([''] + exporting_tools) + '\n')
-            for importing_tool, row in zip(importing_tools, matrix):
+            for importing_tool, row in zip(importing_tools_with_version, matrix):
                 f.write(','.join([importing_tool] + list(map(str, row))) + '\n')
 
     participants = set()
