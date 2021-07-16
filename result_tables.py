@@ -47,6 +47,9 @@ def generate_result_tables(repo_dir, data_dir):
             if 'passed' not in files:
                 continue  # ignore
 
+            if 'notCompliantWithLatestRules' in files:
+                continue  # ignore
+
             segments = split_path(root)
 
             fmi_version, fmi_type, platform, _, _, exporting_tool_name, exporting_tool_version, model_name = segments[-8:]
@@ -187,7 +190,7 @@ def generate_result_tables(repo_dir, data_dir):
 
 
 if __name__ == '__main__':
-    
+
     repo_dir = os.path.dirname(__file__)
     data_dir = os.path.join(os.path.dirname(repo_dir), 'fmi-standard.org', '_data')
     generate_result_tables(repo_dir=repo_dir, data_dir=data_dir)
