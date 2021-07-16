@@ -1,5 +1,5 @@
 Model:
-CVLoop: CVloop is created from an Activate model. This model is based on the model, PF1, given in "Mathematical and Computer Modeling of Physiological Systems" 
+CVloop: CVloop is created from an Activate model. This model is based on the model, PF1, given in "Mathematical and Computer Modeling of Physiological Systems" 
 by Vincent C. Rideout. Prentice Hall, Englewood Cliffs, NJ.  The book has been out of print for a few years but contained some good model examples. 
 The system models a complete Cardiovascular(CV) Loop. The plotted outputs are as follows:
 1) Left Heart--Aortic Pressure, Left Ventricular Pressure and Left Ventricular Flow.
@@ -36,5 +36,5 @@ FMUChecker:
 FMUChecker Version 2.0.4 
 
 ```bash
-./fmuCheck.linux64 -k me -o CVLoop_ref.csv  -s 5 -h 1e-4 -c ,  -n 500 CVLoop.fmu
+./fmuCheck.linux64 -k me -o CVloop_ref.csv  -s 5 -h 1e-4 -c ,  -n 500 CVloop.fmu
 ```
