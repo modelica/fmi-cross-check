@@ -85,6 +85,7 @@ def generate_result_tables(repo_dir, data_dir):
 
         # build matrix
         importing_tools = sorted(importing_tools, key=lambda s: s.lower())
+        importing_tools_with_version = sorted(importing_tools_with_version, key=lambda s: s.lower())
         exporting_tools = sorted(exporting_tools, key=lambda s: s.lower())
 
         matrix = []
