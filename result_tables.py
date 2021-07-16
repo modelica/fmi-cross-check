@@ -49,6 +49,9 @@ def generate_result_tables(repo_dir, data_dir):
             if 'passed' not in files:
                 continue  # ignore
 
+            if 'notCompliantWithLatestRules' in files:
+                continue  # ignore
+
             segments = split_path(root)
 
             fmi_version, fmi_type, platform, _, _, exporting_tool_name, exporting_tool_version, model_name = segments[-8:]
