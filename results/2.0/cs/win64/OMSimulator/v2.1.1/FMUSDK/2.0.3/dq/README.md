@@ -1,34 +1,32 @@
-To simulate FMU `dq.fmu` with OMSimulator run
+The following command and script was used to simulate `dq.fmu`:
 ```bash
-$ wine64 /fmi-cross-check/OMSimulatorBinaries/OMSimulator-mingw64/bin/OMSimulator.exe --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --intervals=500 --suppressPath=true --timeout=60 dq.lua
+> .omsimulator/OMSimulator-mingw64-v2.1.1/bin/OMSimulator.exe --workingDir=results/2.0/cs/win64/OMSimulator/v2.1.1/FMUSDK/2.0.3/dq --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --suppressPath=true --timeout=60 dq.lua
 ```
 
-Lua file:
+dq.lua:
 ```lua
--- Lua file for dq.fmu
-oms_setTempDirectory("temp")
-oms_newModel("model")
-oms_addSystem("model.root", oms_system_wc)
+-- lua file for dq.fmu
+oms_setTempDirectory('C:/Temp/cross-check')
+oms_newModel('model')
+oms_addSystem('model.root', oms_system_wc)
 
 -- instantiate FMU
-oms_addSubModel("model.root.fmu", "../../../../../../../../../fmus/2.0/cs/win64/FMUSDK/2.0.3/dq/dq.fmu")
+oms_addSubModel('model.root.fmu', '../../../../../../../../../fmus/2.0/cs/win64/FMUSDK/2.0.3/dq/dq.fmu')
 
--- Simulation settings
-oms_setSignalFilter("model", ".*")
-oms_setResultFile("model", "dq_out.csv")
-oms_setStartTime("model", 0.0)
-oms_setStopTime("model", 1.0)
-oms_setTolerance("model", 0.01)
-initialStepSize, minimumStepSize, maximumStepSize, status = oms_getVariableStepSize("model")
-oms_setVariableStepSize("model", 0.1, minimumStepSize, 0.1)
-oms_setFixedStepSize("model", 0.1)
+-- simulation settings
+oms_setResultFile('model', 'dq_out.csv')
+oms_setLoggingInterval('model', 0.002)
+oms_setStartTime('model', 0.0)
+oms_setStopTime('model', 1.0)
+oms_setTolerance('model', 1e-06, 0.01)
+oms_setFixedStepSize('model', 0.1)
 
--- Instantiate, initialize and simulate
-oms_instantiate("model")
-oms_initialize("model")
-oms_simulate("model")
-oms_terminate("model")
-oms_delete("model")
+-- instantiate, initialize and simulate
+oms_instantiate('model')
+oms_initialize('model')
+oms_simulate('model')
+oms_terminate('model')
+oms_delete('model')
 ```
-
 See the [OMSimulator documentation](https://openmodelica.org/doc/OMSimulator/master/html/index.html) for more information.
+

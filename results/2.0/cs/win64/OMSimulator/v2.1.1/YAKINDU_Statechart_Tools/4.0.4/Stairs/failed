@@ -1,0 +1,6 @@
+error:   [fmiLogger] module FMICAPI: Could not load the FMU binary: Det gr inte att hitta den angivna modulen.
+error:   [instantiate] Could not load "resources/0001_fmu.fmu" which is associated with "model.root.fmu"; it may be corrupted or may not support your platform
+error:   [initialize] Model "model" is in wrong model state
+error:   [simulate] Model "model" is in wrong model state
+error:   [terminate] Model "model" is in wrong model state
+error:   [terminate] Model "model" is in wrong model state
