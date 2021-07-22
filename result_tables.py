@@ -1,3 +1,4 @@
+import argparse
 import os
 
 
@@ -5,6 +6,7 @@ def generate_result_tables(repo_dir, data_dir):
     """ Generate the cross-check result tables """
 
     import csv
+
     from fmpy.cross_check import get_vendor_ids
 
     combinations = []  # all permutations of FMI version, type and platform
@@ -187,7 +189,11 @@ def generate_result_tables(repo_dir, data_dir):
 
 
 if __name__ == '__main__':
-    
+    # parse command-line arguments
+    parser = argparse.ArgumentParser(description='fmi-cross-check: result_tables.py', allow_abbrev=False)
+    parser.add_argument('--data-dir', default='', type=str, help='_data directory of fmi-standard.org')
+    args = parser.parse_args()
+
     repo_dir = os.path.dirname(__file__)
-    data_dir = os.path.join(os.path.dirname(repo_dir), 'fmi-standard.org', '_data')
+    data_dir = args.data_dir if args.data_dir else os.path.join(os.path.dirname(repo_dir), 'fmi-standard.org', '_data')
     generate_result_tables(repo_dir=repo_dir, data_dir=data_dir)
