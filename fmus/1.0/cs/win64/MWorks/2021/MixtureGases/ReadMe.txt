@@ -1,0 +1,24 @@
+Model:
+MixtureGases
+
+FMI Type:
+CoSimulation
+
+Generation Tool:
+MWorks.Sysporer 2021
+
+Available Platforms:
+win64
+
+Known Errors:
+None
+
+FMUChecker:
+FMUChecker Version 2.0.4
+
+run command for ComplianceChecker:
+set FMUName=MixtureGases
+fmuCheck.win64.exe -k cs -o %FMUName%_ref.csv -e %FMUName%_cc.log -h 1e-3 -s 1.0 "%FMUName%.fmu"
+
+Contact email:
+huangzc@tongyuan.cc
