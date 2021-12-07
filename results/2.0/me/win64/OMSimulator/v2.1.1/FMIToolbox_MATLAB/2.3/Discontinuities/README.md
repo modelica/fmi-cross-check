@@ -1,34 +1,32 @@
-To simulate FMU `Discontinuities.fmu` with OMSimulator run
+The following command and script was used to simulate `Discontinuities.fmu`:
 ```bash
-$ wine64 /fmi-cross-check/OMSimulatorBinaries/OMSimulator-mingw64/bin/OMSimulator.exe --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --intervals=500 --suppressPath=true --timeout=60 Discontinuities.lua
+> .omsimulator/OMSimulator-mingw64-v2.1.1/bin/OMSimulator.exe --workingDir=results/2.0/me/win64/OMSimulator/v2.1.1/FMIToolbox_MATLAB/2.3/Discontinuities --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --suppressPath=true --timeout=60 Discontinuities.lua
 ```
 
-Lua file:
+Discontinuities.lua:
 ```lua
--- Lua file for Discontinuities.fmu
-oms_setTempDirectory("temp")
-oms_newModel("model")
-oms_addSystem("model.root", oms_system_sc)
+-- lua file for Discontinuities.fmu
+oms_setTempDirectory('C:/Temp/cross-check')
+oms_newModel('model')
+oms_addSystem('model.root', oms_system_sc)
 
 -- instantiate FMU
-oms_addSubModel("model.root.fmu", "../../../../../../../../../fmus/2.0/me/win64/FMIToolbox_MATLAB/2.3/Discontinuities/Discontinuities.fmu")
+oms_addSubModel('model.root.fmu', '../../../../../../../../../fmus/2.0/me/win64/FMIToolbox_MATLAB/2.3/Discontinuities/Discontinuities.fmu')
 
--- Simulation settings
-oms_setSignalFilter("model", ".*")
-oms_setResultFile("model", "Discontinuities_out.csv")
-oms_setStartTime("model", 0.0)
-oms_setStopTime("model", 10.0)
-oms_setTolerance("model", 1e-05)
-initialStepSize, minimumStepSize, maximumStepSize, status = oms_getVariableStepSize("model")
-oms_setVariableStepSize("model", 0.02, minimumStepSize, 0.02)
-oms_setFixedStepSize("model", 0.02)
+-- simulation settings
+oms_setResultFile('model', 'Discontinuities_out.csv')
+oms_setLoggingInterval('model', 0.02)
+oms_setStartTime('model', 0.0)
+oms_setStopTime('model', 10.0)
+oms_setTolerance('model', 1e-06, 1e-05)
+oms_setVariableStepSize('model', 1e-12, 1e-12, 0.02)
 
--- Instantiate, initialize and simulate
-oms_instantiate("model")
-oms_initialize("model")
-oms_simulate("model")
-oms_terminate("model")
-oms_delete("model")
+-- instantiate, initialize and simulate
+oms_instantiate('model')
+oms_initialize('model')
+oms_simulate('model')
+oms_terminate('model')
+oms_delete('model')
 ```
-
 See the [OMSimulator documentation](https://openmodelica.org/doc/OMSimulator/master/html/index.html) for more information.
+

@@ -1,34 +1,40 @@
-To simulate FMU `Feedthrough.fmu` with OMSimulator run
+The following command and script was used to simulate `Feedthrough.fmu`:
 ```bash
-$ /fmi-cross-check/OMSimulatorBinaries/OMSimulator-linux-amd64/bin/OMSimulator --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --intervals=500 --suppressPath=true --timeout=60 Feedthrough.lua
+> .omsimulator/OMSimulator-linux-amd64-v2.1.1/bin/OMSimulator --workingDir=results/2.0/cs/linux64/OMSimulator/v2.1.1/Test-FMUs/0.0.2/Feedthrough --stripRoot=true --skipCSVHeader=true --addParametersToCSV=true --suppressPath=true --timeout=60 Feedthrough.lua
 ```
 
-Lua file:
+Feedthrough.lua:
 ```lua
--- Lua file for Feedthrough.fmu
-oms_setTempDirectory("temp")
-oms_newModel("model")
-oms_addSystem("model.root", oms_system_wc)
+-- lua file for Feedthrough.fmu
+oms_setTempDirectory('/tmp/cross-check')
+oms_newModel('model')
+oms_addSystem('model.root', oms_system_wc)
 
 -- instantiate FMU
-oms_addSubModel("model.root.fmu", "../../../../../../../../../fmus/2.0/cs/linux64/Test-FMUs/0.0.2/Feedthrough/Feedthrough.fmu")
+oms_addSubModel('model.root.fmu', '../../../../../../../../../fmus/2.0/cs/linux64/Test-FMUs/0.0.2/Feedthrough/Feedthrough.fmu')
+oms_addSubModel('model.root.input', '../../../../../../../../../fmus/2.0/cs/linux64/Test-FMUs/0.0.2/Feedthrough/Feedthrough_in.csv')
 
--- Simulation settings
-oms_setSignalFilter("model", ".*")
-oms_setResultFile("model", "Feedthrough_out.csv")
-oms_setStartTime("model", 0.0)
-oms_setStopTime("model", 2.0)
-oms_setTolerance("model", 1e-05)
-initialStepSize, minimumStepSize, maximumStepSize, status = oms_getVariableStepSize("model")
-oms_setVariableStepSize("model", 0.004, minimumStepSize, 0.004)
-oms_setFixedStepSize("model", 0.004)
+-- connect inputs to FMU
+oms_addConnection('model.root.input.real_tunable_param', 'model.root.fmu.real_tunable_param')
+oms_addConnection('model.root.input.real_continuous_in', 'model.root.fmu.real_continuous_in')
+oms_addConnection('model.root.input.real_discrete_in', 'model.root.fmu.real_discrete_in')
+oms_addConnection('model.root.input.int_in', 'model.root.fmu.int_in')
+oms_addConnection('model.root.input.bool_in', 'model.root.fmu.bool_in')
 
--- Instantiate, initialize and simulate
-oms_instantiate("model")
-oms_initialize("model")
-oms_simulate("model")
-oms_terminate("model")
-oms_delete("model")
+-- simulation settings
+oms_setResultFile('model', 'Feedthrough_out.csv')
+oms_setLoggingInterval('model', 0.004)
+oms_setStartTime('model', 0.0)
+oms_setStopTime('model', 2.0)
+oms_setTolerance('model', 1e-06, 1e-05)
+oms_setFixedStepSize('model', 0.004)
+
+-- instantiate, initialize and simulate
+oms_instantiate('model')
+oms_initialize('model')
+oms_simulate('model')
+oms_terminate('model')
+oms_delete('model')
 ```
-
 See the [OMSimulator documentation](https://openmodelica.org/doc/OMSimulator/master/html/index.html) for more information.
+
